@@ -1,0 +1,393 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e0c0h ( 57536) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e0e8 vaddr=3fc91d00 size=01f30h (  7984) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1ab10h (109328) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003ab38 vaddr=3fc93c30 size=00a30h (  2608) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0003b570 vaddr=40374000 size=0dcech ( 56556) load[0m
+[0;32mI (173) esp_image: segment 5: paddr=00049264 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (216) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  bb671d2dc...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC95010 len 00054700 (337 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (279) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (289) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (294) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (326) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+[0;32mI (336) EXAMPLE: calibration scheme version is Curve Fitting[0m
+[0;32mI (336) EXAMPLE: Calibration Success[0m
+[0;32mI (346) EXAMPLE: ADC1 Channel[2] Raw Data: 2847[0m
+[0;32mI (346) EXAMPLE: ADC1 Channel[2] Cali Voltage: 2366 mV[0m
+[0;32mI (1356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (1356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (2356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (2356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (3356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (3356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (4356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (4356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (5356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (5356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (6356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (6356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (7356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (7356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (8356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (8356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (9356) EXAMPLE: ADC1 Channel[3] Raw Data: 622[0m
+[0;32mI (9356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 538 mV[0m
+[0;32mI (10356) EXAMPLE: ADC1 Channel[2] Raw Data: 749[0m
+[0;32mI (10356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 644 mV[0m
+[0;32mI (11356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (11356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (12356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (12356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (13356) EXAMPLE: ADC1 Channel[3] Raw Data: 623[0m
+[0;32mI (13356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 539 mV[0m
+[0;32mI (14356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (14356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (15356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (15356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (16356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (16356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (17356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (17356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (18356) EXAMPLE: ADC1 Channel[2] Raw Data: 717[0m
+[0;32mI (18356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 618 mV[0m
+[0;32mI (19356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (19356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (20356) EXAMPLE: ADC1 Channel[2] Raw Data: 749[0m
+[0;32mI (20356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 644 mV[0m
+[0;32mI (21356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (21356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (22356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (22356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (23356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (23356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (24356) EXAMPLE: ADC1 Channel[2] Raw Data: 735[0m
+[0;32mI (24356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (25356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (25356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (26356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (26356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (27356) EXAMPLE: ADC1 Channel[3] Raw Data: 625[0m
+[0;32mI (27356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 540 mV[0m
+[0;32mI (28356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (28356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (29356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (29356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (30356) EXAMPLE: ADC1 Channel[2] Raw Data: 734[0m
+[0;32mI (30356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (31356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (31356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (32356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (32356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (33356) EXAMPLE: ADC1 Channel[3] Raw Data: 524[0m
+[0;32mI (33356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 456 mV[0m
+[0;32mI (34356) EXAMPLE: ADC1 Channel[2] Raw Data: 738[0m
+[0;32mI (34356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 634 mV[0m
+[0;32mI (35356) EXAMPLE: ADC1 Channel[3] Raw Data: 625[0m
+[0;32mI (35356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 540 mV[0m
+[0;32mI (36356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (36356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (37356) EXAMPLE: ADC1 Channel[3] Raw Data: 627[0m
+[0;32mI (37356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 541 mV[0m
+[0;32mI (38356) EXAMPLE: ADC1 Channel[2] Raw Data: 744[0m
+[0;32mI (38356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 639 mV[0m
+[0;32mI (39356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (39356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (40356) EXAMPLE: ADC1 Channel[2] Raw Data: 727[0m
+[0;32mI (40356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 625 mV[0m
+[0;32mI (41356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (41356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (42356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (42356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (43356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (43356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (44356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (44356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (45356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (45356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (46356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (46356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (47356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (47356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (48356) EXAMPLE: ADC1 Channel[2] Raw Data: 734[0m
+[0;32mI (48356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (49356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (49356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (50356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (50356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (51356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (51356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (52356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (52356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (53356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (53356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (54356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (54356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (55356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (55356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (56356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (56356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (57356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (57356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (58356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (58356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (59356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (59356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (60356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (60356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (61356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (61356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (62356) EXAMPLE: ADC1 Channel[2] Raw Data: 746[0m
+[0;32mI (62356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 642 mV[0m
+[0;32mI (63356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (63356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (64356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (64356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (65356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (65356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (66356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (66356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (67356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (67356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (68356) EXAMPLE: ADC1 Channel[2] Raw Data: 732[0m
+[0;32mI (68356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 630 mV[0m
+[0;32mI (69356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (69356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (70356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (70356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (71356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (71356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (72356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (72356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (73356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (73356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (74356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (74356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (75356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (75356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (76356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (76356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (77356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (77356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (78356) EXAMPLE: ADC1 Channel[2] Raw Data: 728[0m
+[0;32mI (78356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 625 mV[0m
+[0;32mI (79356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (79356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (80356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (80356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (81356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (81356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (82356) EXAMPLE: ADC1 Channel[2] Raw Data: 733[0m
+[0;32mI (82356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (83356) EXAMPLE: ADC1 Channel[3] Raw Data: 618[0m
+[0;32mI (83356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (84356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (84356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (85356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (85356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (86356) EXAMPLE: ADC1 Channel[2] Raw Data: 742[0m
+[0;32mI (86356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (87356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (87356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (88356) EXAMPLE: ADC1 Channel[2] Raw Data: 729[0m
+[0;32mI (88356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 627 mV[0m
+[0;32mI (89356) EXAMPLE: ADC1 Channel[3] Raw Data: 618[0m
+[0;32mI (89356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (90356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (90356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (91356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (91356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (92356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (92356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (93356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (93356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (94356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (94356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (95356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (95356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (96356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (96356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (97356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (97356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (98356) EXAMPLE: ADC1 Channel[2] Raw Data: 733[0m
+[0;32mI (98356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (99356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (99356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (100356) EXAMPLE: ADC1 Channel[2] Raw Data: 726[0m
+[0;32mI (100356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 625 mV[0m
+[0;32mI (101356) EXAMPLE: ADC1 Channel[3] Raw Data: 618[0m
+[0;32mI (101356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (102356) EXAMPLE: ADC1 Channel[2] Raw Data: 735[0m
+[0;32mI (102356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (103356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (103356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (104356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (104356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (105356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (105356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (106356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (106356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (107356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (107356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (108356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (108356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (109356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (109356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (110356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (110356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (111356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (111356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (112356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (112356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (113356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (113356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (114356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (114356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (115356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (115356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (116356) EXAMPLE: ADC1 Channel[2] Raw Data: 731[0m
+[0;32mI (116356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 629 mV[0m
+[0;32mI (117356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (117356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (118356) EXAMPLE: ADC1 Channel[2] Raw Data: 746[0m
+[0;32mI (118356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 642 mV[0m
+[0;32mI (119356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (119356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (120356) EXAMPLE: ADC1 Channel[2] Raw Data: 734[0m
+[0;32mI (120356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (121356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (121356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (122356) EXAMPLE: ADC1 Channel[2] Raw Data: 749[0m
+[0;32mI (122356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 644 mV[0m
+[0;32mI (123356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (123356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (124356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (124356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (125356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (125356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (126356) EXAMPLE: ADC1 Channel[2] Raw Data: 742[0m
+[0;32mI (126356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (127356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (127356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (128356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (128356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (129356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (129356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (130356) EXAMPLE: ADC1 Channel[2] Raw Data: 746[0m
+[0;32mI (130356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 642 mV[0m
+[0;32mI (131356) EXAMPLE: ADC1 Channel[3] Raw Data: 618[0m
+[0;32mI (131356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (132356) EXAMPLE: ADC1 Channel[2] Raw Data: 744[0m
+[0;32mI (132356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 639 mV[0m
+[0;32mI (133356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (133356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (134356) EXAMPLE: ADC1 Channel[2] Raw Data: 741[0m
+[0;32mI (134356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (135356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (135356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (136356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (136356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (137356) EXAMPLE: ADC1 Channel[3] Raw Data: 621[0m
+[0;32mI (137356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 537 mV[0m
+[0;32mI (138356) EXAMPLE: ADC1 Channel[2] Raw Data: 733[0m
+[0;32mI (138356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (139356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (139356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (140356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (140356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (141356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (141356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (142356) EXAMPLE: ADC1 Channel[2] Raw Data: 737[0m
+[0;32mI (142356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 633 mV[0m
+[0;32mI (143356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (143356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (144356) EXAMPLE: ADC1 Channel[2] Raw Data: 729[0m
+[0;32mI (144356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 627 mV[0m
+[0;32mI (145356) EXAMPLE: ADC1 Channel[3] Raw Data: 620[0m
+[0;32mI (145356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 536 mV[0m
+[0;32mI (146356) EXAMPLE: ADC1 Channel[2] Raw Data: 735[0m
+[0;32mI (146356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (147356) EXAMPLE: ADC1 Channel[3] Raw Data: 618[0m
+[0;32mI (147356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m
+[0;32mI (148356) EXAMPLE: ADC1 Channel[2] Raw Data: 733[0m
+[0;32mI (148356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 631 mV[0m
+[0;32mI (149356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (149356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (150356) EXAMPLE: ADC1 Channel[2] Raw Data: 742[0m
+[0;32mI (150356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (151356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (151356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (152356) EXAMPLE: ADC1 Channel[2] Raw Data: 743[0m
+[0;32mI (152356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 638 mV[0m
+[0;32mI (153356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (153356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (154356) EXAMPLE: ADC1 Channel[2] Raw Data: 746[0m
+[0;32mI (154356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 642 mV[0m
+[0;32mI (155356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (155356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (156356) EXAMPLE: ADC1 Channel[2] Raw Data: 739[0m
+[0;32mI (156356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 635 mV[0m
+[0;32mI (157356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (157356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (158356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (158356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (159356) EXAMPLE: ADC1 Channel[3] Raw Data: 619[0m
+[0;32mI (159356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 535 mV[0m
+[0;32mI (160356) EXAMPLE: ADC1 Channel[2] Raw Data: 742[0m
+[0;32mI (160356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 636 mV[0m
+[0;32mI (161356) EXAMPLE: ADC1 Channel[3] Raw Data: 601[0m
+[0;32mI (161356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 521 mV[0m
+[0;32mI (162356) EXAMPLE: ADC1 Channel[2] Raw Data: 747[0m
+[0;32mI (162356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 643 mV[0m
+[0;32mI (163356) EXAMPLE: ADC1 Channel[3] Raw Data: 628[0m
+[0;32mI (163356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 542 mV[0m
+[0;32mI (164356) EXAMPLE: ADC1 Channel[2] Raw Data: 745[0m
+[0;32mI (164356) EXAMPLE: ADC1 Channel[2] Cali Voltage: 640 mV[0m
+[0;32mI (165356) EXAMPLE: ADC1 Channel[3] Raw Data: 617[0m
+[0;32mI (165356) EXAMPLE: ADC1 Channel[3] Cali Voltage: 533 mV[0m

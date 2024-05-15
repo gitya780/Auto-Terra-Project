@@ -1,0 +1,27 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200d3c3: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_system/task_wdt/task_wdt.c:441
+0x4200d7e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_system/task_wdt/task_wdt.c:515
+0x40377175: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_vectors.S:1240
+0x4200ae3c: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:424 (discriminator 1)
+0x4200b014: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:500
+0x4200b0db: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:771
+0x4200bb62: i2c_master_transmit_receive at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:986
+0x42008460: app_main at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/atp.c:52
+0x4201b5c7: main_task at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/app_startup.c:208
+0x4037a9e1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200d3c3: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_system/task_wdt/task_wdt.c:441
+0x4200d7e0: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_system/task_wdt/task_wdt.c:515
+0x40377175: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_vectors.S:1240
+0x4200ae3c: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:424 (discriminator 1)
+0x4200b014: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:500
+0x4200b0db: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:771
+0x4200bb62: i2c_master_transmit_receive at C:/Espressif/frameworks/esp-idf-v5.2/components/driver/i2c/i2c_master.c:986
+0x42008460: app_main at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/atp.c:52
+0x4201b5c7: main_task at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/app_startup.c:208
+0x4037a9e1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

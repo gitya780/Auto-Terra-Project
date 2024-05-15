@@ -1,0 +1,348 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (51) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0f5c8h ( 62920) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001f5f0 vaddr=3fc92600 size=00a28h (  2600) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=22740h (141120) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=00042768 vaddr=3fc93028 size=01f90h (  8080) load[0m
+[0;32mI (163) esp_image: segment 4: paddr=00044700 vaddr=40374000 size=0e59ch ( 58780) load[0m
+[0;32mI (183) esp_image: segment 5: paddr=00052ca4 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     atp[0m
+[0;32mI (220) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (225) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  51502caab...[0m
+[0;32mI (237) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (242) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC95970 len 00053DA0 (335 KiB): RAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (275) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (288) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (299) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (303) spi_flash: flash io: opi_str[0m
+[0;33mW (308) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (321) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (328) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (485) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+LEDC configuration successful
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 71 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 78
+ADC1 raw Data: 1980
+ADC2 raw Data: 1563
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 71 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 78
+ADC1 raw Data: 1989
+ADC2 raw Data: 1564
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 79
+ADC1 raw Data: 1991
+ADC2 raw Data: 1551
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 71 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 80
+ADC1 raw Data: 1971
+ADC2 raw Data: 1529
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1979
+ADC2 raw Data: 1541
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 71 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1980
+ADC2 raw Data: 1557
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (51) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0f5c8h ( 62920) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001f5f0 vaddr=3fc92600 size=00a28h (  2600) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=22740h (141120) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=00042768 vaddr=3fc93028 size=01f90h (  8080) load[0m
+[0;32mI (163) esp_image: segment 4: paddr=00044700 vaddr=40374000 size=0e59ch ( 58780) load[0m
+[0;32mI (183) esp_image: segment 5: paddr=00052ca4 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     atp[0m
+[0;32mI (220) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (225) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  51502caab...[0m
+[0;32mI (237) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (242) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC95970 len 00053DA0 (335 KiB): RAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (275) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (288) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (299) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (303) spi_flash: flash io: opi_str[0m
+[0;33mW (308) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (321) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (328) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (485) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+LEDC configuration successful
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 55
+ADC2 convert Data: 81
+ADC1 raw Data: 2022
+ADC2 raw Data: 1512
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1983
+ADC2 raw Data: 1553
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1981
+ADC2 raw Data: 1556
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 79
+ADC1 raw Data: 1999
+ADC2 raw Data: 1557
+Relative Humidity : 43 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1980
+ADC2 raw Data: 1556
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 80
+ADC1 raw Data: 1991
+ADC2 raw Data: 1531
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1983
+ADC2 raw Data: 1553
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 79
+ADC1 raw Data: 1993
+ADC2 raw Data: 1542
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 79
+ADC1 raw Data: 1995
+ADC2 raw Data: 1556
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 80
+ADC1 raw Data: 1981
+ADC2 raw Data: 1531
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 78
+ADC1 raw Data: 1983
+ADC2 raw Data: 1564
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1983
+ADC2 raw Data: 1559
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 79
+ADC1 raw Data: 1980
+ADC2 raw Data: 1545
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 79
+ADC1 raw Data: 1992
+ADC2 raw Data: 1559
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 80
+ADC1 raw Data: 1982
+ADC2 raw Data: 1529
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 80
+ADC1 raw Data: 1991
+ADC2 raw Data: 1529
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 55
+ADC2 convert Data: 2
+ADC1 raw Data: 2019
+ADC2 raw Data: 3043
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 55
+ADC2 convert Data: 2
+ADC1 raw Data: 2027
+ADC2 raw Data: 3055
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 55
+ADC2 convert Data: 1
+ADC1 raw Data: 2019
+ADC2 raw Data: 3063
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 70
+ADC1 raw Data: 1996
+ADC2 raw Data: 1727
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 76
+ADC1 raw Data: 1994
+ADC2 raw Data: 1613
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 77
+ADC1 raw Data: 1979
+ADC2 raw Data: 1597
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 76
+ADC1 raw Data: 2003
+ADC2 raw Data: 1605
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 77
+ADC1 raw Data: 1983
+ADC2 raw Data: 1581
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 77
+ADC1 raw Data: 1977
+ADC2 raw Data: 1589
+Relative Humidity : 45 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 77
+ADC1 raw Data: 1983
+ADC2 raw Data: 1593
+Relative Humidity : 45 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 57
+ADC2 convert Data: 76
+ADC1 raw Data: 1973
+ADC2 raw Data: 1599
+Relative Humidity : 45 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 56
+ADC2 convert Data: 76
+ADC1 raw Data: 1991
+ADC2 raw Data: 1599
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 
+ADC1 convert Data: 58
+ADC2 convert Data: 77
+ADC1 raw Data: 1967
+ADC2 raw Data: 1589
+Relative Humidity : 44 RH 
+Temperature in Fahrenheit : 70 F 

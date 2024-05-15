@@ -1,0 +1,21 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403823e4: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:117
+[0m
+[0;33m0x4038246e: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:213
+[0m
+[0;33m0x40382468: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:208
+[0m
+[0;33m0x4038246e: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:213
+[0m
+[0;33m0x4038246e: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:213
+[0m
+[0;33m0x4038246e: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:213
+[0m
+[0;33m0x40382471: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:214
+[0m
+[0;33m0x4038246b: _xt_context_save at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/xtensa_context.S:212
+[0m
+[0m

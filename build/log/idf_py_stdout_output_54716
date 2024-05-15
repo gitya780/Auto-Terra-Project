@@ -1,0 +1,1740 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0eef8h ( 61176) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ef20 vaddr=3fc93100 size=010f8h (  4344) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20cc8h (134344) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00040cf0 vaddr=3fc941f8 size=018f4h (  6388) load[0m
+[0;32mI (161) esp_image: segment 4: paddr=000425ec vaddr=40374000 size=0f048h ( 61512) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) cpu_start: Application information:[0m
+[0;32mI (212) cpu_start: Project name:     atp[0m
+[0;32mI (216) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (221) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (227) cpu_start: ELF file SHA256:  8f5ab6d60...[0m
+[0;32mI (233) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (238) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (243) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (248) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (260) heap_init: At 3FC96408 len 00053308 (332 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (272) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (285) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (295) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (300) spi_flash: flash io: opi_str[0m
+[0;33mW (304) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (317) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;33mW (328) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (336) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (343) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (350) main_task: Started on CPU0[0m
+[0;32mI (360) main_task: Calling app_main()[0m
+Device 1502162ca5b2ee28 is not present
+Single device optimisations enabled
+  Temperature:20.8 
+789
+  Temperature:20.8 
+44
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+44
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.9 
+43
+  Temperature:20.8 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.8 
+41
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+44
+  Temperature:20.9 
+43
+  Temperature:20.8 
+44
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.8 
+43
+  Temperature:20.8 
+42
+  Temperature:20.8 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.8 
+43
+  Temperature:20.9 
+43
+  Temperature:20.8 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+40
+  Temperature:20.9 
+44
+  Temperature:20.9 
+43
+  Temperature:20.9 
+44
+  Temperature:20.9 
+40
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.8 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+44
+  Temperature:20.9 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+44
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+45
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+45
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+44
+  Temperature:21.0 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:20.9 
+44
+  Temperature:20.9 
+44
+  Temperature:21.0 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+43
+  Temperature:20.9 
+45
+  Temperature:20.9 
+42
+  Temperature:20.9 
+42
+  Temperature:21.0 
+44
+  Temperature:20.9 
+51
+  Temperature:21.0 
+51
+  Temperature:20.9 
+50
+  Temperature:20.9 
+43
+  Temperature:20.9 
+47
+  Temperature:21.0 
+51
+  Temperature:20.9 
+51
+  Temperature:20.9 
+42
+  Temperature:21.0 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:21.0 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+39
+  Temperature:20.9 
+41
+  Temperature:21.0 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:21.0 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+42
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.9 
+43
+  Temperature:20.9 
+41
+  Temperature:20.8 
+43
+  Temperature:20.6 
+41
+  Temperature:20.2 
+43
+  Temperature:20.0 
+40
+  Temperature:19.8 
+43
+  Temperature:19.6 
+41
+  Temperature:19.5 
+43
+  Temperature:19.4 
+42
+  Temperature:19.2 
+43
+  Temperature:19.1 
+43
+  Temperature:19.0 
+42
+  Temperature:18.9 
+42
+  Temperature:18.8 
+42
+  Temperature:18.8 
+42
+  Temperature:18.7 
+43
+  Temperature:18.6 
+43
+  Temperature:18.5 
+43
+  Temperature:18.4 
+42
+  Temperature:18.4 
+43
+  Temperature:18.4 
+42
+  Temperature:18.3 
+43
+  Temperature:18.2 
+43
+  Temperature:18.2 
+42
+  Temperature:18.2 
+39
+  Temperature:18.1 
+42
+  Temperature:18.1 
+43
+  Temperature:18.1 
+44
+  Temperature:18.0 
+43
+  Temperature:18.0 
+43
+  Temperature:17.9 
+42
+  Temperature:17.9 
+42
+  Temperature:17.9 
+43
+  Temperature:17.9 
+43
+  Temperature:17.8 
+41
+  Temperature:17.8 
+41
+  Temperature:17.8 
+43
+  Temperature:17.8 
+43
+  Temperature:17.8 
+33
+  Temperature:17.8 
+42
+  Temperature:17.7 
+29
+  Temperature:17.7 
+41
+  Temperature:17.7 
+42
+  Temperature:17.6 
+43
+  Temperature:17.6 
+42
+  Temperature:17.6 
+42
+  Temperature:17.6 
+40
+  Temperature:17.6 
+42
+  Temperature:17.6 
+42
+  Temperature:17.6 
+43
+  Temperature:17.6 
+43
+  Temperature:17.6 
+41
+  Temperature:17.5 
+42
+  Temperature:17.5 
+43
+  Temperature:17.5 
+43
+  Temperature:17.5 
+42
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+41
+  Temperature:17.4 
+43
+  Temperature:17.4 
+41
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+43
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+41
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+43
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.4 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+41
+  Temperature:17.3 
+41
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+41
+  Temperature:17.3 
+42
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+42
+  Temperature:17.3 
+42
+  Temperature:17.3 
+41
+  Temperature:17.3 
+44
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+41
+  Temperature:17.3 
+42
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+42
+  Temperature:17.3 
+42
+  Temperature:17.3 
+43
+  Temperature:17.3 
+44
+  Temperature:17.3 
+41
+  Temperature:17.3 
+41
+  Temperature:17.3 
+42
+  Temperature:17.3 
+41
+  Temperature:17.3 
+42
+  Temperature:17.2 
+42
+  Temperature:17.2 
+43
+  Temperature:17.2 
+42
+  Temperature:17.2 
+43
+  Temperature:17.2 
+43
+  Temperature:17.3 
+43
+  Temperature:17.4 
+43
+  Temperature:17.7 
+42
+  Temperature:17.9 
+42
+  Temperature:17.9 
+41
+  Temperature:18.0 
+41
+  Temperature:18.1 
+43
+  Temperature:18.1 
+42
+  Temperature:18.1 
+43
+  Temperature:18.1 
+43
+  Temperature:18.1 
+43
+  Temperature:18.1 
+43
+  Temperature:18.2 
+42
+  Temperature:18.6 
+43
+  Temperature:19.4 
+41
+  Temperature:20.2 
+43
+  Temperature:21.1 
+42
+  Temperature:21.8 
+43
+  Temperature:22.5 
+42
+  Temperature:23.1 
+43
+  Temperature:23.8 
+43
+  Temperature:24.2 
+43
+  Temperature:24.8 
+41
+  Temperature:25.2 
+43
+  Temperature:25.6 
+41
+  Temperature:25.9 
+43
+  Temperature:26.3 
+42
+  Temperature:26.6 
+43
+  Temperature:26.9 
+41
+  Temperature:27.2 
+42
+  Temperature:27.4 
+41
+  Temperature:27.7 
+43
+  Temperature:27.9 
+42
+  Temperature:28.1 
+45
+  Temperature:28.3 
+43
+  Temperature:28.5 
+43
+  Temperature:28.7 
+43
+  Temperature:28.8 
+43
+  Temperature:29.0 
+43
+  Temperature:29.1 
+43
+  Temperature:29.3 
+42
+  Temperature:29.4 
+43
+  Temperature:29.6 
+43
+  Temperature:29.7 
+42
+  Temperature:29.8 
+42
+  Temperature:29.9 
+43
+  Temperature:30.0 
+40
+  Temperature:30.1 
+43
+  Temperature:30.2 
+43
+  Temperature:30.3 
+43
+  Temperature:30.4 
+41
+  Temperature:30.4 
+42
+  Temperature:30.6 
+41
+  Temperature:30.6 
+42
+  Temperature:30.7 
+42
+  Temperature:30.8 
+43
+  Temperature:30.8 
+33
+  Temperature:30.9 
+43
+  Temperature:30.9 
+43
+  Temperature:31.0 
+43
+  Temperature:31.1 
+41
+  Temperature:31.1 
+43
+  Temperature:31.2 
+41
+  Temperature:31.2 
+43
+  Temperature:31.3 
+40
+  Temperature:31.4 
+43
+  Temperature:31.4 
+42
+  Temperature:31.4 
+43
+  Temperature:31.5 
+41
+  Temperature:31.6 
+42
+  Temperature:31.6 
+41
+  Temperature:31.6 
+43
+  Temperature:31.7 
+41
+  Temperature:31.7 
+43
+  Temperature:31.8 
+43
+  Temperature:31.8 
+41
+  Temperature:31.9 
+42
+  Temperature:31.9 
+41
+  Temperature:31.9 
+41
+  Temperature:31.9 
+43
+  Temperature:31.9 
+42
+  Temperature:32.0 
+42
+  Temperature:32.0 
+42
+  Temperature:32.1 
+42
+  Temperature:32.1 
+40
+  Temperature:32.1 
+41
+  Temperature:32.1 
+41
+  Temperature:32.1 
+43
+  Temperature:32.2 
+43
+  Temperature:32.2 
+42
+  Temperature:32.2 
+43
+  Temperature:32.2 
+43
+  Temperature:32.2 
+41
+  Temperature:32.3 
+42
+  Temperature:32.3 
+41
+  Temperature:32.3 
+43
+  Temperature:32.4 
+41
+  Temperature:32.4 
+43
+  Temperature:32.4 
+42
+  Temperature:32.4 
+41
+  Temperature:32.4 
+40
+  Temperature:32.4 
+42
+  Temperature:32.5 
+42
+  Temperature:32.5 
+44
+  Temperature:32.5 
+43
+  Temperature:32.6 
+43
+  Temperature:32.6 
+42
+  Temperature:32.6 
+42
+  Temperature:32.5 
+43
+  Temperature:32.4 
+43
+  Temperature:32.3 
+42
+  Temperature:32.2 
+44
+  Temperature:32.1 
+41
+  Temperature:31.9 
+44
+  Temperature:31.8 
+41
+  Temperature:31.8 
+43
+  Temperature:31.6 
+42
+  Temperature:31.5 
+43
+  Temperature:31.4 
+41
+  Temperature:31.3 
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0eef8h ( 61176) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ef20 vaddr=3fc93100 size=010f8h (  4344) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20cc8h (134344) map[0m
+[0;32mI (159) esp_image: segment 3: paddr=00040cf0 vaddr=3fc941f8 size=018f4h (  6388) load[0m
+[0;32mI (161) esp_image: segment 4: paddr=000425ec vaddr=40374000 size=0f048h ( 61512) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) cpu_start: Application information:[0m
+[0;32mI (212) cpu_start: Project name:     atp[0m
+[0;32mI (216) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (221) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (227) cpu_start: ELF file SHA256:  8f5ab6d60...[0m
+[0;32mI (233) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (238) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (243) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (248) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (260) heap_init: At 3FC96408 len 00053308 (332 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (272) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (285) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (295) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (300) spi_flash: flash io: opi_str[0m
+[0;33mW (304) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (317) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;33mW (328) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (336) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (343) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (350) main_task: Started on CPU0[0m
+[0;32mI (360) main_task: Calling app_main()[0m
+Device 1502162ca5b2ee28 is not present
+Single device optimisations enabled
+[0;31mE (2360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2370) ds18b20: ds18b20 device not responding[0m
+[0;33mW (2370) ds18b20: Resolution consistency lost - refreshed from device: 9[0m
+[0;31mE (2380) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2390) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2400) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+795
+[0;31mE (2600) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2600) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2610) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+44
+[0;31mE (2810) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2810) ds18b20: ds18b20 device not responding[0m
+[0;31mE (2820) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (3020) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3020) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3030) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (3230) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3230) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3240) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (3440) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3440) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3450) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (3650) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3650) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3660) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (3860) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3860) ds18b20: ds18b20 device not responding[0m
+[0;31mE (3870) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (4070) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4070) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4080) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (4280) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4280) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4290) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (4490) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4490) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4500) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (4700) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4700) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4710) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (4910) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4910) ds18b20: ds18b20 device not responding[0m
+[0;31mE (4920) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (5120) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5120) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5130) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (5330) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5330) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5340) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (5540) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5540) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5550) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+40
+[0;31mE (5750) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5750) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5760) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (5960) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5960) ds18b20: ds18b20 device not responding[0m
+[0;31mE (5970) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+40
+[0;31mE (6170) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6170) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6180) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (6380) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6380) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6390) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (6590) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6590) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6600) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (6800) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6800) ds18b20: ds18b20 device not responding[0m
+[0;31mE (6810) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (7010) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7010) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7020) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (7220) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7220) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7230) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (7430) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7430) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7440) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (7640) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7640) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7650) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (7850) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7850) ds18b20: ds18b20 device not responding[0m
+[0;31mE (7860) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (8060) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8060) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8070) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (8270) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8270) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8280) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (8480) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8480) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8490) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (8690) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8690) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8700) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (8900) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8900) ds18b20: ds18b20 device not responding[0m
+[0;31mE (8910) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (9110) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9110) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9120) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (9320) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9320) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9330) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (9530) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9530) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9540) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (9740) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9740) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9750) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (9950) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9950) ds18b20: ds18b20 device not responding[0m
+[0;31mE (9960) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (10160) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10160) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10170) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+45
+[0;31mE (10370) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10370) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10380) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (10580) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10580) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10590) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+40
+[0;31mE (10790) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10790) ds18b20: ds18b20 device not responding[0m
+[0;31mE (10800) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (11000) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11000) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11010) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (11210) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11210) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11220) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (11420) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11420) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11430) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (11630) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11630) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11640) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (11840) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11840) ds18b20: ds18b20 device not responding[0m
+[0;31mE (11850) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (12050) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12050) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12060) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (12260) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12260) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12270) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (12470) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12470) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12480) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (12680) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12680) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12690) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (12890) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12890) ds18b20: ds18b20 device not responding[0m
+[0;31mE (12900) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (13100) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13100) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13110) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (13310) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13310) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13320) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (13520) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13520) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13530) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (13730) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13730) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13740) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (13940) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13940) ds18b20: ds18b20 device not responding[0m
+[0;31mE (13950) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (14150) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14150) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14160) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (14360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14370) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (14570) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14570) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14580) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (14780) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14780) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14790) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (14990) ds18b20: ds18b20 device not responding[0m
+[0;31mE (14990) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15000) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (15200) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15200) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15210) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (15410) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15410) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15420) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (15620) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15620) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15630) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (15830) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15830) ds18b20: ds18b20 device not responding[0m
+[0;31mE (15840) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (16040) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16040) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16050) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (16250) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16250) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16260) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (16460) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16460) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16470) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (16670) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16670) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16680) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (16880) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16880) ds18b20: ds18b20 device not responding[0m
+[0;31mE (16890) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (17090) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17090) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17100) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+39
+[0;31mE (17300) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17300) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17310) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (17510) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17510) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17520) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (17720) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17720) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17730) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (17930) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17930) ds18b20: ds18b20 device not responding[0m
+[0;31mE (17940) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (18140) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18140) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18150) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (18350) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18350) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18360) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (18560) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18560) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18570) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (18770) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18770) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18780) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (18980) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18980) ds18b20: ds18b20 device not responding[0m
+[0;31mE (18990) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (19190) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19190) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19200) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (19400) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19400) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19410) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (19610) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19610) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19620) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (19820) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19820) ds18b20: ds18b20 device not responding[0m
+[0;31mE (19830) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;33mW (20140) ds18b20: conversion timed out[0m
+  Temperature:25.0 
+42
+[0;33mW (20450) ds18b20: conversion timed out[0m
+  Temperature:25.0 
+42
+[0;33mW (20760) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+  Temperature:28.5 
+42
+[0;33mW (21300) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (21610) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+41
+[0;33mW (21920) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (22230) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (22540) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (22850) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (23160) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (23470) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (23780) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (24090) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (24400) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (24710) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (25020) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+44
+[0;33mW (25330) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (25640) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (25950) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (26260) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (26570) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (26880) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+41
+[0;33mW (27190) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (27500) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (27810) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (28120) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (28430) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+41
+[0;33mW (28740) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (29050) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (29360) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (29670) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (29980) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+42
+[0;33mW (30290) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+41
+[0;33mW (30600) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (30910) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (31220) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (31530) ds18b20: conversion timed out[0m
+  Temperature:28.5 
+43
+[0;33mW (31840) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (32150) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (32460) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+41
+[0;33mW (32770) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (33080) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (33390) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+41
+[0;33mW (33700) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (34010) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (34320) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (34630) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (34940) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (35250) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (35560) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (35870) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (36180) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (36490) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (36800) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (37110) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (37420) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (37730) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (38040) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (38350) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (38660) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (38970) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (39280) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (39590) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+41
+[0;31mE (39790) ds18b20: ds18b20 device not responding[0m
+[0;31mE (39790) ds18b20: ds18b20 device not responding[0m
+[0;31mE (39800) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (40000) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40000) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40010) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (40210) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40210) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40220) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (40420) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40420) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40430) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (40630) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40630) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40640) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (40840) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40840) ds18b20: ds18b20 device not responding[0m
+[0;31mE (40850) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (41050) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41050) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41060) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (41260) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41260) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41270) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (41470) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41470) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41480) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (41680) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41680) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41690) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (41890) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41890) ds18b20: ds18b20 device not responding[0m
+[0;31mE (41900) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (42100) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42100) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42110) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (42310) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42310) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42320) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (42520) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42520) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42530) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (42730) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42730) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42740) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+42
+[0;31mE (42940) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42940) ds18b20: ds18b20 device not responding[0m
+[0;31mE (42950) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (43150) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43150) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43160) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;31mE (43360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43360) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43370) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+43
+[0;31mE (43570) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43570) ds18b20: ds18b20 device not responding[0m
+[0;31mE (43580) ds18b20: ds18b20 device not responding[0m
+  Temperature:-2048.0 
+41
+[0;33mW (43890) ds18b20: conversion timed out[0m
+  Temperature:25.0 
+42
+[0;33mW (44200) ds18b20: conversion timed out[0m
+  Temperature:25.0 
+43
+[0;33mW (44510) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+43
+[0;33mW (44820) ds18b20: conversion timed out[0m
+  Temperature:28.0 
+42
+[0;33mW (45130) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (45440) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (45750) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (46060) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (46370) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (46680) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (46990) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (47300) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+39
+[0;33mW (47610) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (47920) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (48230) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (48540) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (48850) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (49160) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (49470) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (49780) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (50090) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (50400) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (50710) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (51020) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (51330) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (51640) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (51950) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (52260) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (52570) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (52880) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (53190) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (53500) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (53810) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (54120) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (54430) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (54740) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (55050) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (55360) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (55670) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+41
+[0;33mW (55980) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+42
+[0;33mW (56290) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (56600) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+40
+[0;33mW (56910) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (57220) ds18b20: conversion timed out[0m
+  Temperature:27.5 
+43
+[0;33mW (57530) ds18b20: conversion timed out[0m
+  Temperature:27.0 

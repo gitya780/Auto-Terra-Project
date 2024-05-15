@@ -1,0 +1,294 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d938h ( 55608) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d960 vaddr=3fc91d00 size=026b8h (  9912) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a478h (107640) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=0003a4a0 vaddr=3fc943b8 size=002a8h (   680) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=0003a750 vaddr=40374000 size=0dcech ( 56556) load[0m
+[0;32mI (173) esp_image: segment 5: paddr=00048444 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  448a6c95d...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95010 len 00054700 (337 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;33mW (335) EXAMPLE: eFuse not burnt, skip software calibration[0m
+[0;32mI (335) EXAMPLE: ADC1 Channel[2] Raw Data: 4095[0m
+[0;32mI (1345) EXAMPLE: ADC1 Channel[2] Raw Data: 485[0m
+[0;32mI (2345) EXAMPLE: ADC1 Channel[2] Raw Data: 500[0m
+[0;32mI (3345) EXAMPLE: ADC1 Channel[2] Raw Data: 507[0m
+[0;32mI (4345) EXAMPLE: ADC1 Channel[2] Raw Data: 519[0m
+[0;32mI (5345) EXAMPLE: ADC1 Channel[2] Raw Data: 527[0m
+[0;32mI (6345) EXAMPLE: ADC1 Channel[2] Raw Data: 547[0m
+[0;32mI (7345) EXAMPLE: ADC1 Channel[2] Raw Data: 558[0m
+[0;32mI (8345) EXAMPLE: ADC1 Channel[2] Raw Data: 554[0m
+[0;32mI (9345) EXAMPLE: ADC1 Channel[2] Raw Data: 550[0m
+[0;32mI (10345) EXAMPLE: ADC1 Channel[2] Raw Data: 537[0m
+[0;32mI (11345) EXAMPLE: ADC1 Channel[2] Raw Data: 519[0m
+[0;32mI (12345) EXAMPLE: ADC1 Channel[2] Raw Data: 500[0m
+[0;32mI (13345) EXAMPLE: ADC1 Channel[2] Raw Data: 474[0m
+[0;32mI (14345) EXAMPLE: ADC1 Channel[2] Raw Data: 444[0m
+[0;32mI (15345) EXAMPLE: ADC1 Channel[2] Raw Data: 428[0m
+[0;32mI (16345) EXAMPLE: ADC1 Channel[2] Raw Data: 407[0m
+[0;32mI (17345) EXAMPLE: ADC1 Channel[2] Raw Data: 393[0m
+[0;32mI (18345) EXAMPLE: ADC1 Channel[2] Raw Data: 383[0m
+[0;32mI (19345) EXAMPLE: ADC1 Channel[2] Raw Data: 371[0m
+[0;32mI (20345) EXAMPLE: ADC1 Channel[2] Raw Data: 353[0m
+[0;32mI (21345) EXAMPLE: ADC1 Channel[2] Raw Data: 355[0m
+[0;32mI (22345) EXAMPLE: ADC1 Channel[2] Raw Data: 341[0m
+[0;32mI (23345) EXAMPLE: ADC1 Channel[2] Raw Data: 345[0m
+[0;32mI (24345) EXAMPLE: ADC1 Channel[2] Raw Data: 347[0m
+[0;32mI (25345) EXAMPLE: ADC1 Channel[2] Raw Data: 357[0m
+[0;32mI (26345) EXAMPLE: ADC1 Channel[2] Raw Data: 363[0m
+[0;32mI (27345) EXAMPLE: ADC1 Channel[2] Raw Data: 375[0m
+[0;32mI (28345) EXAMPLE: ADC1 Channel[2] Raw Data: 403[0m
+[0;32mI (29345) EXAMPLE: ADC1 Channel[2] Raw Data: 428[0m
+[0;32mI (30345) EXAMPLE: ADC1 Channel[2] Raw Data: 439[0m
+[0;32mI (31345) EXAMPLE: ADC1 Channel[2] Raw Data: 455[0m
+[0;32mI (32345) EXAMPLE: ADC1 Channel[2] Raw Data: 460[0m
+[0;32mI (33345) EXAMPLE: ADC1 Channel[2] Raw Data: 461[0m
+[0;32mI (34345) EXAMPLE: ADC1 Channel[2] Raw Data: 462[0m
+[0;32mI (35345) EXAMPLE: ADC1 Channel[2] Raw Data: 468[0m
+[0;32mI (36345) EXAMPLE: ADC1 Channel[2] Raw Data: 467[0m
+[0;32mI (37345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (38345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (39345) EXAMPLE: ADC1 Channel[2] Raw Data: 473[0m
+[0;32mI (40345) EXAMPLE: ADC1 Channel[2] Raw Data: 478[0m
+[0;32mI (41345) EXAMPLE: ADC1 Channel[2] Raw Data: 479[0m
+[0;32mI (42345) EXAMPLE: ADC1 Channel[2] Raw Data: 485[0m
+[0;32mI (43345) EXAMPLE: ADC1 Channel[2] Raw Data: 488[0m
+[0;32mI (44345) EXAMPLE: ADC1 Channel[2] Raw Data: 483[0m
+[0;32mI (45345) EXAMPLE: ADC1 Channel[2] Raw Data: 489[0m
+[0;32mI (46345) EXAMPLE: ADC1 Channel[2] Raw Data: 493[0m
+[0;32mI (47345) EXAMPLE: ADC1 Channel[2] Raw Data: 500[0m
+[0;32mI (48345) EXAMPLE: ADC1 Channel[2] Raw Data: 506[0m
+[0;32mI (49345) EXAMPLE: ADC1 Channel[2] Raw Data: 510[0m
+[0;32mI (50345) EXAMPLE: ADC1 Channel[2] Raw Data: 529[0m
+[0;32mI (51345) EXAMPLE: ADC1 Channel[2] Raw Data: 533[0m
+[0;32mI (52345) EXAMPLE: ADC1 Channel[2] Raw Data: 542[0m
+[0;32mI (53345) EXAMPLE: ADC1 Channel[2] Raw Data: 555[0m
+[0;32mI (54345) EXAMPLE: ADC1 Channel[2] Raw Data: 551[0m
+[0;32mI (55345) EXAMPLE: ADC1 Channel[2] Raw Data: 547[0m
+[0;32mI (56345) EXAMPLE: ADC1 Channel[2] Raw Data: 531[0m
+[0;32mI (57345) EXAMPLE: ADC1 Channel[2] Raw Data: 505[0m
+[0;32mI (58345) EXAMPLE: ADC1 Channel[2] Raw Data: 487[0m
+[0;32mI (59345) EXAMPLE: ADC1 Channel[2] Raw Data: 459[0m
+[0;32mI (60345) EXAMPLE: ADC1 Channel[2] Raw Data: 443[0m
+[0;32mI (61345) EXAMPLE: ADC1 Channel[2] Raw Data: 419[0m
+[0;32mI (62345) EXAMPLE: ADC1 Channel[2] Raw Data: 393[0m
+[0;32mI (63345) EXAMPLE: ADC1 Channel[2] Raw Data: 383[0m
+[0;32mI (64345) EXAMPLE: ADC1 Channel[2] Raw Data: 378[0m
+[0;32mI (65345) EXAMPLE: ADC1 Channel[2] Raw Data: 365[0m
+[0;32mI (66345) EXAMPLE: ADC1 Channel[2] Raw Data: 359[0m
+[0;32mI (67345) EXAMPLE: ADC1 Channel[2] Raw Data: 343[0m
+[0;32mI (68345) EXAMPLE: ADC1 Channel[2] Raw Data: 335[0m
+[0;32mI (69345) EXAMPLE: ADC1 Channel[2] Raw Data: 335[0m
+[0;32mI (70345) EXAMPLE: ADC1 Channel[2] Raw Data: 335[0m
+[0;32mI (71345) EXAMPLE: ADC1 Channel[2] Raw Data: 344[0m
+[0;32mI (72345) EXAMPLE: ADC1 Channel[2] Raw Data: 355[0m
+[0;32mI (73345) EXAMPLE: ADC1 Channel[2] Raw Data: 376[0m
+[0;32mI (74345) EXAMPLE: ADC1 Channel[2] Raw Data: 378[0m
+[0;32mI (75345) EXAMPLE: ADC1 Channel[2] Raw Data: 404[0m
+[0;32mI (76345) EXAMPLE: ADC1 Channel[2] Raw Data: 413[0m
+[0;32mI (77345) EXAMPLE: ADC1 Channel[2] Raw Data: 441[0m
+[0;32mI (78345) EXAMPLE: ADC1 Channel[2] Raw Data: 457[0m
+[0;32mI (79345) EXAMPLE: ADC1 Channel[2] Raw Data: 458[0m
+[0;32mI (80345) EXAMPLE: ADC1 Channel[2] Raw Data: 459[0m
+[0;32mI (81345) EXAMPLE: ADC1 Channel[2] Raw Data: 457[0m
+[0;32mI (82345) EXAMPLE: ADC1 Channel[2] Raw Data: 467[0m
+[0;32mI (83345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (84345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (85345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (86345) EXAMPLE: ADC1 Channel[2] Raw Data: 470[0m
+[0;32mI (87345) EXAMPLE: ADC1 Channel[2] Raw Data: 475[0m
+[0;32mI (88345) EXAMPLE: ADC1 Channel[2] Raw Data: 479[0m
+[0;32mI (89345) EXAMPLE: ADC1 Channel[2] Raw Data: 479[0m
+[0;32mI (90345) EXAMPLE: ADC1 Channel[2] Raw Data: 482[0m
+[0;32mI (91345) EXAMPLE: ADC1 Channel[2] Raw Data: 486[0m
+[0;32mI (92345) EXAMPLE: ADC1 Channel[2] Raw Data: 496[0m
+[0;32mI (93345) EXAMPLE: ADC1 Channel[2] Raw Data: 496[0m
+[0;32mI (94345) EXAMPLE: ADC1 Channel[2] Raw Data: 507[0m
+[0;32mI (95345) EXAMPLE: ADC1 Channel[2] Raw Data: 527[0m
+[0;32mI (96345) EXAMPLE: ADC1 Channel[2] Raw Data: 537[0m
+[0;32mI (97345) EXAMPLE: ADC1 Channel[2] Raw Data: 541[0m
+[0;32mI (98345) EXAMPLE: ADC1 Channel[2] Raw Data: 549[0m
+[0;32mI (99345) EXAMPLE: ADC1 Channel[2] Raw Data: 541[0m
+[0;32mI (100345) EXAMPLE: ADC1 Channel[2] Raw Data: 543[0m
+[0;32mI (101345) EXAMPLE: ADC1 Channel[2] Raw Data: 541[0m
+[0;32mI (102345) EXAMPLE: ADC1 Channel[2] Raw Data: 525[0m
+[0;32mI (103345) EXAMPLE: ADC1 Channel[2] Raw Data: 503[0m
+[0;32mI (104345) EXAMPLE: ADC1 Channel[2] Raw Data: 491[0m
+[0;32mI (105345) EXAMPLE: ADC1 Channel[2] Raw Data: 483[0m
+[0;32mI (106345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (107345) EXAMPLE: ADC1 Channel[2] Raw Data: 461[0m
+[0;32mI (108345) EXAMPLE: ADC1 Channel[2] Raw Data: 447[0m
+[0;32mI (109345) EXAMPLE: ADC1 Channel[2] Raw Data: 441[0m
+[0;32mI (110345) EXAMPLE: ADC1 Channel[2] Raw Data: 443[0m
+[0;32mI (111345) EXAMPLE: ADC1 Channel[2] Raw Data: 439[0m
+[0;32mI (112345) EXAMPLE: ADC1 Channel[2] Raw Data: 425[0m
+[0;32mI (113345) EXAMPLE: ADC1 Channel[2] Raw Data: 425[0m
+[0;32mI (114345) EXAMPLE: ADC1 Channel[2] Raw Data: 424[0m
+[0;32mI (115345) EXAMPLE: ADC1 Channel[2] Raw Data: 423[0m
+[0;32mI (116345) EXAMPLE: ADC1 Channel[2] Raw Data: 419[0m
+[0;32mI (117345) EXAMPLE: ADC1 Channel[2] Raw Data: 423[0m
+[0;32mI (118345) EXAMPLE: ADC1 Channel[2] Raw Data: 427[0m
+[0;32mI (119345) EXAMPLE: ADC1 Channel[2] Raw Data: 426[0m
+[0;32mI (120345) EXAMPLE: ADC1 Channel[2] Raw Data: 428[0m
+[0;32mI (121345) EXAMPLE: ADC1 Channel[2] Raw Data: 435[0m
+[0;32mI (122345) EXAMPLE: ADC1 Channel[2] Raw Data: 426[0m
+[0;32mI (123345) EXAMPLE: ADC1 Channel[2] Raw Data: 431[0m
+[0;32mI (124345) EXAMPLE: ADC1 Channel[2] Raw Data: 431[0m
+[0;32mI (125345) EXAMPLE: ADC1 Channel[2] Raw Data: 431[0m
+[0;32mI (126345) EXAMPLE: ADC1 Channel[2] Raw Data: 423[0m
+[0;32mI (127345) EXAMPLE: ADC1 Channel[2] Raw Data: 430[0m
+[0;32mI (128345) EXAMPLE: ADC1 Channel[2] Raw Data: 429[0m
+[0;32mI (129345) EXAMPLE: ADC1 Channel[2] Raw Data: 432[0m
+[0;32mI (130345) EXAMPLE: ADC1 Channel[2] Raw Data: 445[0m
+[0;32mI (131345) EXAMPLE: ADC1 Channel[2] Raw Data: 441[0m
+[0;32mI (132345) EXAMPLE: ADC1 Channel[2] Raw Data: 446[0m
+[0;32mI (133345) EXAMPLE: ADC1 Channel[2] Raw Data: 455[0m
+[0;32mI (134345) EXAMPLE: ADC1 Channel[2] Raw Data: 459[0m
+[0;32mI (135345) EXAMPLE: ADC1 Channel[2] Raw Data: 470[0m
+[0;32mI (136345) EXAMPLE: ADC1 Channel[2] Raw Data: 475[0m
+[0;32mI (137345) EXAMPLE: ADC1 Channel[2] Raw Data: 477[0m
+[0;32mI (138345) EXAMPLE: ADC1 Channel[2] Raw Data: 483[0m
+[0;32mI (139345) EXAMPLE: ADC1 Channel[2] Raw Data: 484[0m
+[0;32mI (140345) EXAMPLE: ADC1 Channel[2] Raw Data: 491[0m
+[0;32mI (141345) EXAMPLE: ADC1 Channel[2] Raw Data: 499[0m
+[0;32mI (142345) EXAMPLE: ADC1 Channel[2] Raw Data: 509[0m
+[0;32mI (143345) EXAMPLE: ADC1 Channel[2] Raw Data: 506[0m
+[0;32mI (144345) EXAMPLE: ADC1 Channel[2] Raw Data: 519[0m
+[0;32mI (145345) EXAMPLE: ADC1 Channel[2] Raw Data: 533[0m
+[0;32mI (146345) EXAMPLE: ADC1 Channel[2] Raw Data: 525[0m
+[0;32mI (147345) EXAMPLE: ADC1 Channel[2] Raw Data: 547[0m
+[0;32mI (148345) EXAMPLE: ADC1 Channel[2] Raw Data: 543[0m
+[0;32mI (149345) EXAMPLE: ADC1 Channel[2] Raw Data: 544[0m
+[0;32mI (150345) EXAMPLE: ADC1 Channel[2] Raw Data: 551[0m
+[0;32mI (151345) EXAMPLE: ADC1 Channel[2] Raw Data: 552[0m
+[0;32mI (152345) EXAMPLE: ADC1 Channel[2] Raw Data: 556[0m
+[0;32mI (153345) EXAMPLE: ADC1 Channel[2] Raw Data: 552[0m
+[0;32mI (154345) EXAMPLE: ADC1 Channel[2] Raw Data: 557[0m
+[0;32mI (155345) EXAMPLE: ADC1 Channel[2] Raw Data: 550[0m
+[0;32mI (156345) EXAMPLE: ADC1 Channel[2] Raw Data: 548[0m
+[0;32mI (157345) EXAMPLE: ADC1 Channel[2] Raw Data: 541[0m
+[0;32mI (158345) EXAMPLE: ADC1 Channel[2] Raw Data: 540[0m
+[0;32mI (159345) EXAMPLE: ADC1 Channel[2] Raw Data: 531[0m
+[0;32mI (160345) EXAMPLE: ADC1 Channel[2] Raw Data: 517[0m
+[0;32mI (161345) EXAMPLE: ADC1 Channel[2] Raw Data: 509[0m
+[0;32mI (162345) EXAMPLE: ADC1 Channel[2] Raw Data: 505[0m
+[0;32mI (163345) EXAMPLE: ADC1 Channel[2] Raw Data: 504[0m
+[0;32mI (164345) EXAMPLE: ADC1 Channel[2] Raw Data: 495[0m
+[0;32mI (165345) EXAMPLE: ADC1 Channel[2] Raw Data: 491[0m
+[0;32mI (166345) EXAMPLE: ADC1 Channel[2] Raw Data: 492[0m
+[0;32mI (167345) EXAMPLE: ADC1 Channel[2] Raw Data: 484[0m
+[0;32mI (168345) EXAMPLE: ADC1 Channel[2] Raw Data: 479[0m
+[0;32mI (169345) EXAMPLE: ADC1 Channel[2] Raw Data: 468[0m
+[0;32mI (170345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (171345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (172345) EXAMPLE: ADC1 Channel[2] Raw Data: 467[0m
+[0;32mI (173345) EXAMPLE: ADC1 Channel[2] Raw Data: 472[0m
+[0;32mI (174345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (175345) EXAMPLE: ADC1 Channel[2] Raw Data: 469[0m
+[0;32mI (176345) EXAMPLE: ADC1 Channel[2] Raw Data: 463[0m
+[0;32mI (177345) EXAMPLE: ADC1 Channel[2] Raw Data: 461[0m
+[0;32mI (178345) EXAMPLE: ADC1 Channel[2] Raw Data: 461[0m
+[0;32mI (179345) EXAMPLE: ADC1 Channel[2] Raw Data: 452[0m
+[0;32mI (180345) EXAMPLE: ADC1 Channel[2] Raw Data: 460[0m
+[0;32mI (181345) EXAMPLE: ADC1 Channel[2] Raw Data: 459[0m
+[0;32mI (182345) EXAMPLE: ADC1 Channel[2] Raw Data: 457[0m
+[0;32mI (183345) EXAMPLE: ADC1 Channel[2] Raw Data: 459[0m
+[0;32mI (184345) EXAMPLE: ADC1 Channel[2] Raw Data: 455[0m
+[0;32mI (185345) EXAMPLE: ADC1 Channel[2] Raw Data: 443[0m
+[0;32mI (186345) EXAMPLE: ADC1 Channel[2] Raw Data: 430[0m
+[0;32mI (187345) EXAMPLE: ADC1 Channel[2] Raw Data: 423[0m
+[0;32mI (188345) EXAMPLE: ADC1 Channel[2] Raw Data: 411[0m
+[0;32mI (189345) EXAMPLE: ADC1 Channel[2] Raw Data: 398[0m
+[0;32mI (190345) EXAMPLE: ADC1 Channel[2] Raw Data: 381[0m
+[0;32mI (191345) EXAMPLE: ADC1 Channel[2] Raw Data: 362[0m
+[0;32mI (192345) EXAMPLE: ADC1 Channel[2] Raw Data: 351[0m
+[0;32mI (193345) EXAMPLE: ADC1 Channel[2] Raw Data: 342[0m
+[0;32mI (194345) EXAMPLE: ADC1 Channel[2] Raw Data: 337[0m
+[0;32mI (195345) EXAMPLE: ADC1 Channel[2] Raw Data: 339[0m
+[0;32mI (196345) EXAMPLE: ADC1 Channel[2] Raw Data: 341[0m
+[0;32mI (197345) EXAMPLE: ADC1 Channel[2] Raw Data: 331[0m
+[0;32mI (198345) EXAMPLE: ADC1 Channel[2] Raw Data: 340[0m
+[0;32mI (199345) EXAMPLE: ADC1 Channel[2] Raw Data: 349[0m
+[0;32mI (200345) EXAMPLE: ADC1 Channel[2] Raw Data: 351[0m
+[0;32mI (201345) EXAMPLE: ADC1 Channel[2] Raw Data: 363[0m
+[0;32mI (202345) EXAMPLE: ADC1 Channel[2] Raw Data: 365[0m
+[0;32mI (203345) EXAMPLE: ADC1 Channel[2] Raw Data: 366[0m
+[0;32mI (204345) EXAMPLE: ADC1 Channel[2] Raw Data: 375[0m
+[0;32mI (205345) EXAMPLE: ADC1 Channel[2] Raw Data: 383[0m
+[0;32mI (206345) EXAMPLE: ADC1 Channel[2] Raw Data: 395[0m
+[0;32mI (207345) EXAMPLE: ADC1 Channel[2] Raw Data: 416[0m
+[0;32mI (208345) EXAMPLE: ADC1 Channel[2] Raw Data: 431[0m
+[0;32mI (209345) EXAMPLE: ADC1 Channel[2] Raw Data: 444[0m
+[0;32mI (210345) EXAMPLE: ADC1 Channel[2] Raw Data: 461[0m
+[0;32mI (211345) EXAMPLE: ADC1 Channel[2] Raw Data: 479[0m
+[0;32mI (212345) EXAMPLE: ADC1 Channel[2] Raw Data: 494[0m
+[0;32mI (213345) EXAMPLE: ADC1 Channel[2] Raw Data: 509[0m
+[0;32mI (214345) EXAMPLE: ADC1 Channel[2] Raw Data: 527[0m
+[0;32mI (215345) EXAMPLE: ADC1 Channel[2] Raw Data: 543[0m
+[0;32mI (216345) EXAMPLE: ADC1 Channel[2] Raw Data: 553[0m
+[0;32mI (217345) EXAMPLE: ADC1 Channel[2] Raw Data: 551[0m
+[0;32mI (218345) EXAMPLE: ADC1 Channel[2] Raw Data: 541[0m
+[0;32mI (219345) EXAMPLE: ADC1 Channel[2] Raw Data: 530[0m
+[0;32mI (220345) EXAMPLE: ADC1 Channel[2] Raw Data: 506[0m
+[0;32mI (221345) EXAMPLE: ADC1 Channel[2] Raw Data: 503[0m
+[0;32mI (222345) EXAMPLE: ADC1 Channel[2] Raw Data: 495[0m
+[0;32mI (223345) EXAMPLE: ADC1 Channel[2] Raw Data: 491[0m
+[0;32mI (224345) EXAMPLE: ADC1 Channel[2] Raw Data: 483[0m
+[0;32mI (225345) EXAMPLE: ADC1 Channel[2] Raw Data: 482[0m
+[0;32mI (226345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (227345) EXAMPLE: ADC1 Channel[2] Raw Data: 475[0m
+[0;32mI (228345) EXAMPLE: ADC1 Channel[2] Raw Data: 470[0m
+[0;32mI (229345) EXAMPLE: ADC1 Channel[2] Raw Data: 470[0m
+[0;32mI (230345) EXAMPLE: ADC1 Channel[2] Raw Data: 471[0m
+[0;32mI (231345) EXAMPLE: ADC1 Channel[2] Raw Data: 467[0m
+[0;32mI (232345) EXAMPLE: ADC1 Channel[2] Raw Data: 468[0m
+[0;32mI (233345) EXAMPLE: ADC1 Channel[2] Raw Data: 468[0m

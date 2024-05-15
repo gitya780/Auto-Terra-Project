@@ -1,0 +1,17 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "files.associations": {
+        "*.inc": "c",
+        "owb_rmt.h": "c",
+        "adc_cali_scheme.h": "c",
+        "adc_cali.h": "c",
+        "i2c_slave.h": "c",
+        "i2c.h": "c",
+        "i2c_master.h": "c",
+        "task.h": "c",
+        "ledc.h": "c",
+        "freertos.h": "c",
+        "adc_types.h": "c"
+    },
+    "idf.portWin": "COM10"
+}

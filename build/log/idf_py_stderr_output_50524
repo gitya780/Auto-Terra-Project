@@ -1,0 +1,32 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037b865: spinlock_acquire at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_hw_support/include/spinlock.h:103
+ (inlined by) xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+[0m
+[0;33m0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m0x4037b862: xt_utils_get_raw_core_id at C:/Espressif/frameworks/esp-idf-v5.2/components/xtensa/include/xt_utils.h:51
+ (inlined by) spinlock_acquire at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_hw_support/include/spinlock.h:87
+ (inlined by) xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+0x4037a5ee: vPortEnterCritical at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) prvReceiveGeneric at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_ringbuf/ringbuf.c:833
+0x4037a9a6: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_ringbuf/ringbuf.c:1108
+0x42008dcd: onewire_flush_rmt_rx_buf at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/owb_rmt.c:107
+0x42008f3f: _reset at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/owb_rmt.c:131
+0x4200913a: owb_reset at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/owb.c:476
+0x42008555: _address_device at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/ds18b20.c:118
+0x420085be: _read_scratchpad at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/ds18b20.c:243
+0x420088b8: ds18b20_read_resolution at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/ds18b20.c:451
+0x42008906: ds18b20_init_solo at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/ds18b20.c:388
+0x42008404: app_main at C:/Espressif/frameworks/esp-idf-v5.2/examples/get-started/myproject/main/atp.c:140
+0x4201b1ab: main_task at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/app_startup.c:208
+0x4037b675: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375914: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.2/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

@@ -1,0 +1,1021 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d7d0h ( 55248) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d7f8 vaddr=3fc91d00 size=02820h ( 10272) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a360h (107360) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=0003a388 vaddr=3fc94520 size=00140h (   320) load[0m
+[0;32mI (151) esp_image: segment 4: paddr=0003a4d0 vaddr=40374000 size=0dcech ( 56556) load[0m
+[0;32mI (172) esp_image: segment 5: paddr=000481c4 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (209) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  fd224c630...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC94F78 len 00054798 (337 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) EXAMPLE: ADC1 Raw Data: 3037
+[0m
+[0;32mI (2335) EXAMPLE: ADC1 Raw Data: 3037
+[0m
+[0;32mI (4335) EXAMPLE: ADC1 Raw Data: 3032
+[0m
+[0;32mI (6335) EXAMPLE: ADC1 Raw Data: 3059
+[0m
+[0;32mI (8335) EXAMPLE: ADC1 Raw Data: 3028
+[0m
+[0;32mI (10335) EXAMPLE: ADC1 Raw Data: 3037
+[0m
+[0;32mI (12335) EXAMPLE: ADC1 Raw Data: 1342
+[0m
+[0;32mI (14335) EXAMPLE: ADC1 Raw Data: 1289
+[0m
+[0;32mI (16335) EXAMPLE: ADC1 Raw Data: 1291
+[0m
+[0;32mI (18335) EXAMPLE: ADC1 Raw Data: 1321
+[0m
+[0;32mI (20335) EXAMPLE: ADC1 Raw Data: 1341
+[0m
+[0;32mI (22335) EXAMPLE: ADC1 Raw Data: 1342
+[0m
+[0;32mI (24335) EXAMPLE: ADC1 Raw Data: 1301
+[0m
+[0;32mI (26335) EXAMPLE: ADC1 Raw Data: 1262
+[0m
+[0;32mI (28335) EXAMPLE: ADC1 Raw Data: 2428
+[0m
+[0;32mI (30335) EXAMPLE: ADC1 Raw Data: 2665
+[0m
+[0;32mI (32335) EXAMPLE: ADC1 Raw Data: 2664
+[0m
+[0;32mI (34335) EXAMPLE: ADC1 Raw Data: 1807
+[0m
+[0;32mI (36335) EXAMPLE: ADC1 Raw Data: 1619
+[0m
+[0;32mI (38335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (40335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (42335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (44335) EXAMPLE: ADC1 Raw Data: 2537
+[0m
+[0;32mI (46335) EXAMPLE: ADC1 Raw Data: 2966
+[0m
+[0;32mI (48335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (50335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (52335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (54335) EXAMPLE: ADC1 Raw Data: 2701
+[0m
+[0;32mI (56335) EXAMPLE: ADC1 Raw Data: 2737
+[0m
+[0;32mI (58335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (60335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (62335) EXAMPLE: ADC1 Raw Data: 2979
+[0m
+[0;32mI (64335) EXAMPLE: ADC1 Raw Data: 2953
+[0m
+[0;32mI (66335) EXAMPLE: ADC1 Raw Data: 2988
+[0m
+[0;32mI (68335) EXAMPLE: ADC1 Raw Data: 2991
+[0m
+[0;32mI (70335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (72335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (74335) EXAMPLE: ADC1 Raw Data: 2767
+[0m
+[0;32mI (76335) EXAMPLE: ADC1 Raw Data: 2727
+[0m
+[0;32mI (78335) EXAMPLE: ADC1 Raw Data: 2729
+[0m
+[0;32mI (80335) EXAMPLE: ADC1 Raw Data: 2758
+[0m
+[0;32mI (82335) EXAMPLE: ADC1 Raw Data: 2792
+[0m
+[0;32mI (84335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (86335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (88335) EXAMPLE: ADC1 Raw Data: 2997
+[0m
+[0;32mI (90335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (92335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (94335) EXAMPLE: ADC1 Raw Data: 2997
+[0m
+[0;32mI (96335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (98335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (100335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (102335) EXAMPLE: ADC1 Raw Data: 2984
+[0m
+[0;32mI (104335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (106335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (108335) EXAMPLE: ADC1 Raw Data: 3020
+[0m
+[0;32mI (110335) EXAMPLE: ADC1 Raw Data: 2944
+[0m
+[0;32mI (112335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (114335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (116335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (118335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (120335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (122335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (124335) EXAMPLE: ADC1 Raw Data: 2953
+[0m
+[0;32mI (126335) EXAMPLE: ADC1 Raw Data: 2952
+[0m
+[0;32mI (128335) EXAMPLE: ADC1 Raw Data: 2953
+[0m
+[0;32mI (130335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (132335) EXAMPLE: ADC1 Raw Data: 2941
+[0m
+[0;32mI (134335) EXAMPLE: ADC1 Raw Data: 3020
+[0m
+[0;32mI (136335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (138335) EXAMPLE: ADC1 Raw Data: 2949
+[0m
+[0;32mI (140335) EXAMPLE: ADC1 Raw Data: 2942
+[0m
+[0;32mI (142335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (144335) EXAMPLE: ADC1 Raw Data: 2943
+[0m
+[0;32mI (146335) EXAMPLE: ADC1 Raw Data: 3004
+[0m
+[0;32mI (148335) EXAMPLE: ADC1 Raw Data: 3012
+[0m
+[0;32mI (150335) EXAMPLE: ADC1 Raw Data: 2949
+[0m
+[0;32mI (152335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (154335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (156335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (158335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (160335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (162335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (164335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (166335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (168335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (170335) EXAMPLE: ADC1 Raw Data: 2952
+[0m
+[0;32mI (172335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (174335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (176335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (178335) EXAMPLE: ADC1 Raw Data: 2995
+[0m
+[0;32mI (180335) EXAMPLE: ADC1 Raw Data: 2953
+[0m
+[0;32mI (182335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (184335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (186335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (188335) EXAMPLE: ADC1 Raw Data: 2958
+[0m
+[0;32mI (190335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (192335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (194335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (196335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (198335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (200335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (202335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (204335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (206335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (208335) EXAMPLE: ADC1 Raw Data: 2991
+[0m
+[0;32mI (210335) EXAMPLE: ADC1 Raw Data: 2972
+[0m
+[0;32mI (212335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (214335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (216335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (218335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (220335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (222335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (224335) EXAMPLE: ADC1 Raw Data: 3008
+[0m
+[0;32mI (226335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (228335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (230335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (232335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (234335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (236335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (238335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (240335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (242335) EXAMPLE: ADC1 Raw Data: 2992
+[0m
+[0;32mI (244335) EXAMPLE: ADC1 Raw Data: 2970
+[0m
+[0;32mI (246335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (248335) EXAMPLE: ADC1 Raw Data: 2954
+[0m
+[0;32mI (250335) EXAMPLE: ADC1 Raw Data: 2980
+[0m
+[0;32mI (252335) EXAMPLE: ADC1 Raw Data: 2979
+[0m
+[0;32mI (254335) EXAMPLE: ADC1 Raw Data: 2976
+[0m
+[0;32mI (256335) EXAMPLE: ADC1 Raw Data: 2991
+[0m
+[0;32mI (258335) EXAMPLE: ADC1 Raw Data: 2979
+[0m
+[0;32mI (260335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (262335) EXAMPLE: ADC1 Raw Data: 2979
+[0m
+[0;32mI (264335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (266335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (268335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (270335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (272335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (274335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (276335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (278335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (280335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (282335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (284335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (286335) EXAMPLE: ADC1 Raw Data: 2997
+[0m
+[0;32mI (288335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (290335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (292335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (294335) EXAMPLE: ADC1 Raw Data: 2952
+[0m
+[0;32mI (296335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (298335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (300335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (302335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (304335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (306335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (308335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (310335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (312335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (314335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (316335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (318335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (320335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (322335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (324335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (326335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (328335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (330335) EXAMPLE: ADC1 Raw Data: 2980
+[0m
+[0;32mI (332335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (334335) EXAMPLE: ADC1 Raw Data: 2961
+[0m
+[0;32mI (336335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (338335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (340335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (342335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (344335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (346335) EXAMPLE: ADC1 Raw Data: 3006
+[0m
+[0;32mI (348335) EXAMPLE: ADC1 Raw Data: 3004
+[0m
+[0;32mI (350335) EXAMPLE: ADC1 Raw Data: 3012
+[0m
+[0;32mI (352335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (354335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (356335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (358335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (360335) EXAMPLE: ADC1 Raw Data: 2943
+[0m
+[0;32mI (362335) EXAMPLE: ADC1 Raw Data: 2962
+[0m
+[0;32mI (364335) EXAMPLE: ADC1 Raw Data: 2942
+[0m
+[0;32mI (366335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (368335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (370335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (372335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (374335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (376335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (378335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (380335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (382335) EXAMPLE: ADC1 Raw Data: 2980
+[0m
+[0;32mI (384335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (386335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (388335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (390335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (392335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (394335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (396335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (398335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (400335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (402335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (404335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (406335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (408335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (410335) EXAMPLE: ADC1 Raw Data: 2984
+[0m
+[0;32mI (412335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (414335) EXAMPLE: ADC1 Raw Data: 3018
+[0m
+[0;32mI (416335) EXAMPLE: ADC1 Raw Data: 2943
+[0m
+[0;32mI (418335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (420335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (422335) EXAMPLE: ADC1 Raw Data: 2968
+[0m
+[0;32mI (424335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (426335) EXAMPLE: ADC1 Raw Data: 2998
+[0m
+[0;32mI (428335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (430335) EXAMPLE: ADC1 Raw Data: 2992
+[0m
+[0;32mI (432335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (434335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (436335) EXAMPLE: ADC1 Raw Data: 3004
+[0m
+[0;32mI (438335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (440335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (442335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (444335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (446335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (448335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (450335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (452335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (454335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (456335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (458335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (460335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (462335) EXAMPLE: ADC1 Raw Data: 2991
+[0m
+[0;32mI (464335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (466335) EXAMPLE: ADC1 Raw Data: 2979
+[0m
+[0;32mI (468335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (470335) EXAMPLE: ADC1 Raw Data: 2972
+[0m
+[0;32mI (472335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (474335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (476335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (478335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (480335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (482335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (484335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (486335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (488335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (490335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (492335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (494335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (496335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (498335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (500335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (502335) EXAMPLE: ADC1 Raw Data: 2995
+[0m
+[0;32mI (504335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (506335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (508335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (510335) EXAMPLE: ADC1 Raw Data: 2935
+[0m
+[0;32mI (512335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (514335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (516335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (518335) EXAMPLE: ADC1 Raw Data: 2968
+[0m
+[0;32mI (520335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (522335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (524335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (526335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (528335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (530335) EXAMPLE: ADC1 Raw Data: 3035
+[0m
+[0;32mI (532335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (534335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (536335) EXAMPLE: ADC1 Raw Data: 3029
+[0m
+[0;32mI (538335) EXAMPLE: ADC1 Raw Data: 2997
+[0m
+[0;32mI (540335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (542335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (544335) EXAMPLE: ADC1 Raw Data: 3027
+[0m
+[0;32mI (546335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (548335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (550335) EXAMPLE: ADC1 Raw Data: 2958
+[0m
+[0;32mI (552335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (554335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (556335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (558335) EXAMPLE: ADC1 Raw Data: 3032
+[0m
+[0;32mI (560335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (562335) EXAMPLE: ADC1 Raw Data: 3018
+[0m
+[0;32mI (564335) EXAMPLE: ADC1 Raw Data: 2988
+[0m
+[0;32mI (566335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (568335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (570335) EXAMPLE: ADC1 Raw Data: 2949
+[0m
+[0;32mI (572335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (574335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (576335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (578335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (580335) EXAMPLE: ADC1 Raw Data: 2961
+[0m
+[0;32mI (582335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (584335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (586335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (588335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (590335) EXAMPLE: ADC1 Raw Data: 2986
+[0m
+[0;32mI (592335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (594335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (596335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (598335) EXAMPLE: ADC1 Raw Data: 3018
+[0m
+[0;32mI (600335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (602335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (604335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (606335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (608335) EXAMPLE: ADC1 Raw Data: 2985
+[0m
+[0;32mI (610335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (612335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (614335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (616335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (618335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (620335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (622335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (624335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (626335) EXAMPLE: ADC1 Raw Data: 3018
+[0m
+[0;32mI (628335) EXAMPLE: ADC1 Raw Data: 2970
+[0m
+[0;32mI (630335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (632335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (634335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (636335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (638335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (640335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (642335) EXAMPLE: ADC1 Raw Data: 2949
+[0m
+[0;32mI (644335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (646335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (648335) EXAMPLE: ADC1 Raw Data: 2952
+[0m
+[0;32mI (650335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (652335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (654335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (656335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (658335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (660335) EXAMPLE: ADC1 Raw Data: 3022
+[0m
+[0;32mI (662335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (664335) EXAMPLE: ADC1 Raw Data: 3003
+[0m
+[0;32mI (666335) EXAMPLE: ADC1 Raw Data: 2958
+[0m
+[0;32mI (668335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (670335) EXAMPLE: ADC1 Raw Data: 2981
+[0m
+[0;32mI (672335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (674335) EXAMPLE: ADC1 Raw Data: 2968
+[0m
+[0;32mI (676335) EXAMPLE: ADC1 Raw Data: 2964
+[0m
+[0;32mI (678335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (680335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (682335) EXAMPLE: ADC1 Raw Data: 2985
+[0m
+[0;32mI (684335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (686335) EXAMPLE: ADC1 Raw Data: 2951
+[0m
+[0;32mI (688335) EXAMPLE: ADC1 Raw Data: 3025
+[0m
+[0;32mI (690335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (692335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (694335) EXAMPLE: ADC1 Raw Data: 3022
+[0m
+[0;32mI (696335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (698335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (700335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (702335) EXAMPLE: ADC1 Raw Data: 2962
+[0m
+[0;32mI (704335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (706335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (708335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (710335) EXAMPLE: ADC1 Raw Data: 2960
+[0m
+[0;32mI (712335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (714335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (716335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (718335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (720335) EXAMPLE: ADC1 Raw Data: 2984
+[0m
+[0;32mI (722335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (724335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (726335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (728335) EXAMPLE: ADC1 Raw Data: 3022
+[0m
+[0;32mI (730335) EXAMPLE: ADC1 Raw Data: 2997
+[0m
+[0;32mI (732335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (734335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (736335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (738335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (740335) EXAMPLE: ADC1 Raw Data: 3018
+[0m
+[0;32mI (742335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (744335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (746335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (748335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (750335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (752335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (754335) EXAMPLE: ADC1 Raw Data: 3028
+[0m
+[0;32mI (756335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (758335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (760335) EXAMPLE: ADC1 Raw Data: 3027
+[0m
+[0;32mI (762335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (764335) EXAMPLE: ADC1 Raw Data: 2998
+[0m
+[0;32mI (766335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (768335) EXAMPLE: ADC1 Raw Data: 2962
+[0m
+[0;32mI (770335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (772335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (774335) EXAMPLE: ADC1 Raw Data: 2970
+[0m
+[0;32mI (776335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (778335) EXAMPLE: ADC1 Raw Data: 3004
+[0m
+[0;32mI (780335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (782335) EXAMPLE: ADC1 Raw Data: 2991
+[0m
+[0;32mI (784335) EXAMPLE: ADC1 Raw Data: 2971
+[0m
+[0;32mI (786335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (788335) EXAMPLE: ADC1 Raw Data: 2940
+[0m
+[0;32mI (790335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (792335) EXAMPLE: ADC1 Raw Data: 2980
+[0m
+[0;32mI (794335) EXAMPLE: ADC1 Raw Data: 2961
+[0m
+[0;32mI (796335) EXAMPLE: ADC1 Raw Data: 2968
+[0m
+[0;32mI (798335) EXAMPLE: ADC1 Raw Data: 2966
+[0m
+[0;32mI (800335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (802335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (804335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (806335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (808335) EXAMPLE: ADC1 Raw Data: 2963
+[0m
+[0;32mI (810335) EXAMPLE: ADC1 Raw Data: 3007
+[0m
+[0;32mI (812335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (814335) EXAMPLE: ADC1 Raw Data: 2961
+[0m
+[0;32mI (816335) EXAMPLE: ADC1 Raw Data: 3031
+[0m
+[0;32mI (818335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (820335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (822335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (824335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (826335) EXAMPLE: ADC1 Raw Data: 3031
+[0m
+[0;32mI (828335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (830335) EXAMPLE: ADC1 Raw Data: 3033
+[0m
+[0;32mI (832335) EXAMPLE: ADC1 Raw Data: 3000
+[0m
+[0;32mI (834335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (836335) EXAMPLE: ADC1 Raw Data: 2986
+[0m
+[0;32mI (838335) EXAMPLE: ADC1 Raw Data: 2975
+[0m
+[0;32mI (840335) EXAMPLE: ADC1 Raw Data: 2985
+[0m
+[0;32mI (842335) EXAMPLE: ADC1 Raw Data: 3005
+[0m
+[0;32mI (844335) EXAMPLE: ADC1 Raw Data: 2970
+[0m
+[0;32mI (846335) EXAMPLE: ADC1 Raw Data: 3027
+[0m
+[0;32mI (848335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (850335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (852335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (854335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (856335) EXAMPLE: ADC1 Raw Data: 3001
+[0m
+[0;32mI (858335) EXAMPLE: ADC1 Raw Data: 3002
+[0m
+[0;32mI (860335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (862335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (864335) EXAMPLE: ADC1 Raw Data: 2967
+[0m
+[0;32mI (866335) EXAMPLE: ADC1 Raw Data: 2972
+[0m
+[0;32mI (868335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (870335) EXAMPLE: ADC1 Raw Data: 2953
+[0m
+[0;32mI (872335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (874335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (876335) EXAMPLE: ADC1 Raw Data: 2995
+[0m
+[0;32mI (878335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (880335) EXAMPLE: ADC1 Raw Data: 2996
+[0m
+[0;32mI (882335) EXAMPLE: ADC1 Raw Data: 2987
+[0m
+[0;32mI (884335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (886335) EXAMPLE: ADC1 Raw Data: 3031
+[0m
+[0;32mI (888335) EXAMPLE: ADC1 Raw Data: 3012
+[0m
+[0;32mI (890335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (892335) EXAMPLE: ADC1 Raw Data: 2950
+[0m
+[0;32mI (894335) EXAMPLE: ADC1 Raw Data: 2959
+[0m
+[0;32mI (896335) EXAMPLE: ADC1 Raw Data: 2957
+[0m
+[0;32mI (898335) EXAMPLE: ADC1 Raw Data: 3021
+[0m
+[0;32mI (900335) EXAMPLE: ADC1 Raw Data: 2955
+[0m
+[0;32mI (902335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (904335) EXAMPLE: ADC1 Raw Data: 3019
+[0m
+[0;32mI (906335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (908335) EXAMPLE: ADC1 Raw Data: 3016
+[0m
+[0;32mI (910335) EXAMPLE: ADC1 Raw Data: 2978
+[0m
+[0;32mI (912335) EXAMPLE: ADC1 Raw Data: 3013
+[0m
+[0;32mI (914335) EXAMPLE: ADC1 Raw Data: 2988
+[0m
+[0;32mI (916335) EXAMPLE: ADC1 Raw Data: 3002
+[0m
+[0;32mI (918335) EXAMPLE: ADC1 Raw Data: 3031
+[0m
+[0;32mI (920335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (922335) EXAMPLE: ADC1 Raw Data: 3023
+[0m
+[0;32mI (924335) EXAMPLE: ADC1 Raw Data: 2956
+[0m
+[0;32mI (926335) EXAMPLE: ADC1 Raw Data: 2989
+[0m
+[0;32mI (928335) EXAMPLE: ADC1 Raw Data: 2969
+[0m
+[0;32mI (930335) EXAMPLE: ADC1 Raw Data: 2974
+[0m
+[0;32mI (932335) EXAMPLE: ADC1 Raw Data: 2983
+[0m
+[0;32mI (934335) EXAMPLE: ADC1 Raw Data: 2973
+[0m
+[0;32mI (936335) EXAMPLE: ADC1 Raw Data: 3015
+[0m
+[0;32mI (938335) EXAMPLE: ADC1 Raw Data: 2999
+[0m
+[0;32mI (940335) EXAMPLE: ADC1 Raw Data: 3017
+[0m
+[0;32mI (942335) EXAMPLE: ADC1 Raw Data: 2965
+[0m
+[0;32mI (944335) EXAMPLE: ADC1 Raw Data: 2968
+[0m
+[0;32mI (946335) EXAMPLE: ADC1 Raw Data: 3027
+[0m
+[0;32mI (948335) EXAMPLE: ADC1 Raw Data: 3046
+[0m
+[0;32mI (950335) EXAMPLE: ADC1 Raw Data: 1335
+[0m
+[0;32mI (952335) EXAMPLE: ADC1 Raw Data: 1323
+[0m
+[0;32mI (954335) EXAMPLE: ADC1 Raw Data: 1267
+[0m
+[0;32mI (956335) EXAMPLE: ADC1 Raw Data: 2781
+[0m
+[0;32mI (958335) EXAMPLE: ADC1 Raw Data: 2787
+[0m
+[0;32mI (960335) EXAMPLE: ADC1 Raw Data: 2783
+[0m

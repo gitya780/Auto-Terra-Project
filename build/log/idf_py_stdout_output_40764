@@ -1,0 +1,625 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (51) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d664h ( 54884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d68c vaddr=3fc92100 size=02918h ( 10520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ffac vaddr=40374000 size=0006ch (   108) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a2b4h (107188) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003a2dc vaddr=4037406c size=0dfd4h ( 57300) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  7afcba820...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95320 len 000543F0 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+LEDC configuration successful
+[0;32mI (335) main_task: Returned from app_main()[0m
+Current RPM: 20070
+Current RPM: 20850
+Current RPM: 21000
+Current RPM: 20850
+Current RPM: 24510
+Current RPM: 19560
+Current RPM: 21360
+Current RPM: 22530
+Current RPM: 22560
+Current RPM: 22560
+Current RPM: 23220
+Current RPM: 21660
+Current RPM: 26370
+Current RPM: 24750
+Current RPM: 23220
+Current RPM: 20730
+Current RPM: 21540
+Current RPM: 25980
+Current RPM: 19710
+Current RPM: 20160
+Current RPM: 21990
+Current RPM: 20100
+Current RPM: 21690
+Current RPM: 24180
+Current RPM: 21570
+Current RPM: 24000
+Current RPM: 14610
+Current RPM: 15420
+Current RPM: 9180
+Current RPM: 4740
+Current RPM: 5100
+Current RPM: 4530
+Current RPM: 4770
+Current RPM: 5610
+Current RPM: 5220
+Current RPM: 5070
+Current RPM: 10920
+Current RPM: 12000
+Current RPM: 10710
+Current RPM: 4650
+Current RPM: 7290
+Current RPM: 4110
+Current RPM: 4770
+Current RPM: 8280
+Current RPM: 7350
+Current RPM: 5160
+Current RPM: 5550
+Current RPM: 5220
+Current RPM: 7650
+Current RPM: 14130
+Current RPM: 14400
+Current RPM: 12180
+Current RPM: 7500
+Current RPM: 11160
+Current RPM: 5550
+Current RPM: 5790
+Current RPM: 5550
+Current RPM: 4650
+Current RPM: 8790
+Current RPM: 6300
+Current RPM: 13440
+Current RPM: 16470
+Current RPM: 8130
+Current RPM: 6360
+Current RPM: 13470
+Current RPM: 6750
+Current RPM: 6390
+Current RPM: 6420
+Current RPM: 19710
+Current RPM: 28650
+Current RPM: 34920
+Current RPM: 28620
+Current RPM: 10590
+Current RPM: 6930
+Current RPM: 6540
+Current RPM: 48840
+Current RPM: 117480
+Current RPM: 107970
+Current RPM: 96300
+Current RPM: 54480
+Current RPM: 61560
+Current RPM: 41400
+Current RPM: 47340
+Current RPM: 33060
+Current RPM: 11130
+Current RPM: 15630
+Current RPM: 10740
+Current RPM: 4950
+Current RPM: 5160
+Current RPM: 5460
+Current RPM: 5940
+Current RPM: 5070
+Current RPM: 6660
+Current RPM: 204630
+Current RPM: 11460
+Current RPM: 13320
+Current RPM: 13830
+Current RPM: 59340
+Current RPM: 173280
+Current RPM: 158340
+Current RPM: 153780
+Current RPM: 153810
+Current RPM: 157500
+Current RPM: 164760
+Current RPM: 166710
+Current RPM: 165030
+Current RPM: 27660
+Current RPM: 31650
+Current RPM: 10860
+Current RPM: 11910
+Current RPM: 12450
+Current RPM: 10920
+Current RPM: 14310
+Current RPM: 17190
+Current RPM: 12150
+Current RPM: 31920
+Current RPM: 163050
+Current RPM: 159630
+Current RPM: 157350
+Current RPM: 169890
+Current RPM: 159990
+Current RPM: 170250
+Current RPM: 166440
+Current RPM: 164880
+Current RPM: 159270
+Current RPM: 163860
+Current RPM: 159900
+Current RPM: 155880
+Current RPM: 160740
+Current RPM: 176730
+Current RPM: 161820
+Current RPM: 166590
+Current RPM: 173850
+Current RPM: 167070
+Current RPM: 170610
+Current RPM: 159690
+Current RPM: 158760
+Current RPM: 159900
+Current RPM: 165810
+Current RPM: 153780
+Current RPM: 157260
+Current RPM: 153990
+Current RPM: 161490
+Current RPM: 163440
+Current RPM: 168720
+Current RPM: 150420
+Current RPM: 151560
+Current RPM: 166470
+Current RPM: 165540
+Current RPM: 154890
+Current RPM: 148380
+Current RPM: 154530
+Current RPM: 168720
+Current RPM: 168720
+Current RPM: 166380
+Current RPM: 147000
+Current RPM: 159960
+Current RPM: 153270
+Current RPM: 156060
+Current RPM: 164280
+Current RPM: 160980
+Current RPM: 163140
+Current RPM: 148770
+Current RPM: 166830
+Current RPM: 164070
+Current RPM: 159540
+Current RPM: 151320
+Current RPM: 155220
+Current RPM: 161640
+Current RPM: 161670
+Current RPM: 176610
+Current RPM: 172470
+Current RPM: 174300
+Current RPM: 173160
+Current RPM: 158130
+Current RPM: 159060
+Current RPM: 173100
+Current RPM: 162810
+Current RPM: 176910
+Current RPM: 155670
+Current RPM: 152910
+Current RPM: 153150
+Current RPM: 157860
+Current RPM: 158250
+Current RPM: 170880
+Current RPM: 158490
+Current RPM: 160650
+Current RPM: 161310
+Current RPM: 153780
+Current RPM: 159960
+Current RPM: 159000
+Current RPM: 161370
+Current RPM: 159840
+Current RPM: 162120
+Current RPM: 156150
+Current RPM: 155340
+Current RPM: 155970
+Current RPM: 147720
+Current RPM: 158580
+Current RPM: 156030
+Current RPM: 162270
+Current RPM: 156270
+Current RPM: 151650
+Current RPM: 156150
+Current RPM: 164220
+Current RPM: 160560
+Current RPM: 154770
+Current RPM: 152730
+Current RPM: 159810
+Current RPM: 161100
+Current RPM: 155880
+Current RPM: 158820
+Current RPM: 157530
+Current RPM: 163770
+Current RPM: 169710
+Current RPM: 152370
+Current RPM: 162600
+Current RPM: 163650
+Current RPM: 154170
+Current RPM: 152130
+Current RPM: 158820
+Current RPM: 160200
+Current RPM: 152400
+Current RPM: 155790
+Current RPM: 162600
+Current RPM: 172140
+Current RPM: 159720
+Current RPM: 160740
+Current RPM: 166050
+Current RPM: 159240
+Current RPM: 155400
+Current RPM: 157680
+Current RPM: 147690
+Current RPM: 148320
+Current RPM: 155430
+Current RPM: 172380
+Current RPM: 160350
+Current RPM: 153840
+Current RPM: 155130
+Current RPM: 163950
+Current RPM: 155820
+Current RPM: 152730
+Current RPM: 156030
+Current RPM: 154320
+Current RPM: 158010
+Current RPM: 152460
+Current RPM: 157140
+Current RPM: 153420
+Current RPM: 158940
+Current RPM: 158610
+Current RPM: 149340
+Current RPM: 160350
+Current RPM: 159150
+Current RPM: 156240
+Current RPM: 161370
+Current RPM: 165750
+Current RPM: 155190
+Current RPM: 168840
+Current RPM: 163320
+Current RPM: 159480
+Current RPM: 158010
+Current RPM: 160230
+Current RPM: 158670
+Current RPM: 155250
+Current RPM: 161220
+Current RPM: 155910
+Current RPM: 158730
+Current RPM: 164370
+Current RPM: 159060
+Current RPM: 162840
+Current RPM: 162660
+Current RPM: 159780
+Current RPM: 153180
+Current RPM: 157050
+Current RPM: 162000
+Current RPM: 165090
+Current RPM: 152010
+Current RPM: 162030
+Current RPM: 153570
+Current RPM: 161910
+Current RPM: 146430
+Current RPM: 144960
+Current RPM: 158310
+Current RPM: 161670
+Current RPM: 165060
+Current RPM: 160560
+Current RPM: 166170
+Current RPM: 161550
+Current RPM: 151710
+Current RPM: 161070
+Current RPM: 151170
+Current RPM: 149730
+Current RPM: 150150
+Current RPM: 160560
+Current RPM: 166560
+Current RPM: 160320
+Current RPM: 159450
+Current RPM: 161310
+Current RPM: 160470
+Current RPM: 164130
+Current RPM: 162240
+Current RPM: 149880
+Current RPM: 155220
+Current RPM: 153180
+Current RPM: 146310
+Current RPM: 146250
+Current RPM: 160260
+Current RPM: 165930
+Current RPM: 165030
+Current RPM: 157770
+Current RPM: 165360
+Current RPM: 152400
+Current RPM: 165480
+Current RPM: 171870
+Current RPM: 162540
+Current RPM: 156600
+Current RPM: 159960
+Current RPM: 151920
+Current RPM: 154440
+Current RPM: 149280
+Current RPM: 154080
+Current RPM: 156930
+Current RPM: 160320
+Current RPM: 152850
+Current RPM: 152070
+Current RPM: 153360
+Current RPM: 162030
+Current RPM: 155790
+Current RPM: 169620
+Current RPM: 165720
+Current RPM: 161700
+Current RPM: 149100
+Current RPM: 165600
+Current RPM: 173640
+Current RPM: 167730
+Current RPM: 159420
+Current RPM: 161820
+Current RPM: 152460
+Current RPM: 170670
+Current RPM: 159690
+Current RPM: 132360
+Current RPM: 157770
+Current RPM: 166080
+Current RPM: 183120
+Current RPM: 157260
+Current RPM: 155850
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2f (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (51) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d664h ( 54884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d68c vaddr=3fc92100 size=02918h ( 10520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ffac vaddr=40374000 size=0006ch (   108) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a2b4h (107188) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003a2dc vaddr=4037406c size=0dfd4h ( 57300) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  7afcba820...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95320 len 000543F0 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+LEDC configuration successful
+[0;32mI (335) main_task: Returned from app_main()[0m
+Current RPM: 154680
+Current RPM: 153510
+Current RPM: 155640
+Current RPM: 153030
+Current RPM: 164850
+Current RPM: 165900
+Current RPM: 161070
+Current RPM: 158880
+Current RPM: 158790
+Current RPM: 172680
+Current RPM: 156060
+Current RPM: 150810
+Current RPM: 152490
+Current RPM: 157740
+Current RPM: 149250
+Current RPM: 148740
+Current RPM: 165090
+Current RPM: 161550
+Current RPM: 163230
+Current RPM: 159510
+Current RPM: 148230
+Current RPM: 155730
+Current RPM: 162900
+Current RPM: 161970
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d664h ( 54884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d68c vaddr=3fc92100 size=02918h ( 10520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ffac vaddr=40374000 size=0006ch (   108) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a2b4h (107188) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003a2dc vaddr=4037406c size=0dfd4h ( 57300) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  7afcba820...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95320 len 000543F0 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+LEDC configuration successful
+[0;32mI (335) main_task: Returned from app_main()[0m
+Current RPM: 311460
+Current RPM: 292770
+Current RPM: 281130
+Current RPM: 295020
+Current RPM: 290370
+Current RPM: 288150
+Current RPM: 313650
+Current RPM: 299610
+Current RPM: 284430
+Current RPM: 312360
+Current RPM: 299550
+Current RPM: 279210
+Current RPM: 315630
+Current RPM: 296880
+Current RPM: 326040
+Current RPM: 289230
+Current RPM: 323700
+Current RPM: 297900
+Current RPM: 294060
+Current RPM: 299820
+Current RPM: 302610
+Current RPM: 264990
+Current RPM: 276570
+Current RPM: 304170
+Current RPM: 310260
+Current RPM: 185370
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 78270
+Current RPM: 143760
+Current RPM: 144480
+Current RPM: 148080
+Current RPM: 148560
+Current RPM: 156300
+Current RPM: 153420
+Current RPM: 149340
+Current RPM: 160050
+Current RPM: 145470
+Current RPM: 147060
+Current RPM: 152100
+Current RPM: 150390
+Current RPM: 162600
+Current RPM: 144420
+Current RPM: 158670
+Current RPM: 155040
+Current RPM: 151950
+Current RPM: 150450
+Current RPM: 150900
+Current RPM: 158610
+Current RPM: 147480
+Current RPM: 156480
+Current RPM: 150330
+Current RPM: 157890
+Current RPM: 148650
+Current RPM: 156600
+Current RPM: 147810
+Current RPM: 160920
+Current RPM: 160770
+Current RPM: 150750
+Current RPM: 150750
+Current RPM: 157980
+Current RPM: 149610
+Current RPM: 157410
+Current RPM: 157170
+Current RPM: 158340
+Current RPM: 161370

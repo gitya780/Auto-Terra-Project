@@ -1,0 +1,94 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d938h ( 55608) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d960 vaddr=3fc91d00 size=026b8h (  9912) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1a478h (107640) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=0003a4a0 vaddr=3fc943b8 size=002a8h (   680) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=0003a750 vaddr=40374000 size=0dcech ( 56556) load[0m
+[0;32mI (173) esp_image: segment 5: paddr=00048444 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  43e3c2cff...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95010 len 00054700 (337 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;33mW (335) EXAMPLE: eFuse not burnt, skip software calibration[0m
+[0;32mI (335) EXAMPLE: ADC1 Channel[2] Raw Data: 3029[0m
+[0;32mI (1345) EXAMPLE: ADC1 Channel[2] Raw Data: 135[0m
+[0;32mI (2345) EXAMPLE: ADC1 Channel[2] Raw Data: 133[0m
+[0;32mI (3345) EXAMPLE: ADC1 Channel[2] Raw Data: 127[0m
+[0;32mI (4345) EXAMPLE: ADC1 Channel[2] Raw Data: 140[0m
+[0;32mI (5345) EXAMPLE: ADC1 Channel[2] Raw Data: 141[0m
+[0;32mI (6345) EXAMPLE: ADC1 Channel[2] Raw Data: 143[0m
+[0;32mI (7345) EXAMPLE: ADC1 Channel[2] Raw Data: 147[0m
+[0;32mI (8345) EXAMPLE: ADC1 Channel[2] Raw Data: 149[0m
+[0;32mI (9345) EXAMPLE: ADC1 Channel[2] Raw Data: 153[0m
+[0;32mI (10345) EXAMPLE: ADC1 Channel[2] Raw Data: 155[0m
+[0;32mI (11345) EXAMPLE: ADC1 Channel[2] Raw Data: 159[0m
+[0;32mI (12345) EXAMPLE: ADC1 Channel[2] Raw Data: 165[0m
+[0;32mI (13345) EXAMPLE: ADC1 Channel[2] Raw Data: 168[0m
+[0;32mI (14345) EXAMPLE: ADC1 Channel[2] Raw Data: 171[0m
+[0;32mI (15345) EXAMPLE: ADC1 Channel[2] Raw Data: 175[0m
+[0;32mI (16345) EXAMPLE: ADC1 Channel[2] Raw Data: 175[0m
+[0;32mI (17345) EXAMPLE: ADC1 Channel[2] Raw Data: 181[0m
+[0;32mI (18345) EXAMPLE: ADC1 Channel[2] Raw Data: 182[0m
+[0;32mI (19345) EXAMPLE: ADC1 Channel[2] Raw Data: 181[0m
+[0;32mI (20345) EXAMPLE: ADC1 Channel[2] Raw Data: 183[0m
+[0;32mI (21345) EXAMPLE: ADC1 Channel[2] Raw Data: 183[0m
+[0;32mI (22345) EXAMPLE: ADC1 Channel[2] Raw Data: 185[0m
+[0;32mI (23345) EXAMPLE: ADC1 Channel[2] Raw Data: 184[0m
+[0;32mI (24345) EXAMPLE: ADC1 Channel[2] Raw Data: 185[0m
+[0;32mI (25345) EXAMPLE: ADC1 Channel[2] Raw Data: 189[0m
+[0;32mI (26345) EXAMPLE: ADC1 Channel[2] Raw Data: 188[0m
+[0;32mI (27345) EXAMPLE: ADC1 Channel[2] Raw Data: 184[0m
+[0;32mI (28345) EXAMPLE: ADC1 Channel[2] Raw Data: 185[0m
+[0;32mI (29345) EXAMPLE: ADC1 Channel[2] Raw Data: 187[0m
+[0;32mI (30345) EXAMPLE: ADC1 Channel[2] Raw Data: 185[0m
+[0;32mI (31345) EXAMPLE: ADC1 Channel[2] Raw Data: 187[0m
+[0;32mI (32345) EXAMPLE: ADC1 Channel[2] Raw Data: 185[0m
+[0;32mI (33345) EXAMPLE: ADC1 Channel[2] Raw Data: 187[0m

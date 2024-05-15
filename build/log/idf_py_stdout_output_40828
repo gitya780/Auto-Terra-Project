@@ -1,0 +1,1014 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d664h ( 54884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d68c vaddr=3fc92100 size=02918h ( 10520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ffac vaddr=40374000 size=0006ch (   108) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a2a4h (107172) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003a2cc vaddr=4037406c size=0dfe8h ( 57320) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  69008bece...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95320 len 000543F0 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+LEDC configuration successful
+[0;32mI (335) main_task: Returned from app_main()[0m
+Current RPM: 456720
+Current RPM: 469650
+Current RPM: 473220
+Current RPM: 469410
+Current RPM: 447810
+Current RPM: 465450
+Current RPM: 494520
+Current RPM: 474030
+Current RPM: 448380
+Current RPM: 469950
+Current RPM: 466950
+Current RPM: 468210
+Current RPM: 476040
+Current RPM: 478680
+Current RPM: 482130
+Current RPM: 472350
+Current RPM: 469890
+Current RPM: 476790
+Current RPM: 460050
+Current RPM: 453180
+Current RPM: 287460
+Current RPM: 227400
+Current RPM: 225600
+Current RPM: 220800
+Current RPM: 232650
+Current RPM: 368310
+Current RPM: 294480
+Current RPM: 345600
+Current RPM: 408930
+Current RPM: 439680
+Current RPM: 436050
+Current RPM: 392700
+Current RPM: 364800
+Current RPM: 419400
+Current RPM: 395100
+Current RPM: 404880
+Current RPM: 424590
+Current RPM: 493830
+Current RPM: 471570
+Current RPM: 473490
+Current RPM: 476460
+Current RPM: 448710
+Current RPM: 438210
+Current RPM: 106800
+Current RPM: 0
+Current RPM: 196740
+Current RPM: 16950
+Current RPM: 25200
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 0
+Current RPM: 182010
+Current RPM: 440250
+Current RPM: 467640
+Current RPM: 461730
+Current RPM: 485850
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2f (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (51) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d664h ( 54884) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001d68c vaddr=3fc92100 size=02918h ( 10520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ffac vaddr=40374000 size=0006ch (   108) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a2a4h (107172) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003a2cc vaddr=4037406c size=0dfe8h ( 57320) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  69008bece...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC95320 len 000543F0 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (289) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+LEDC configuration successful
+[0;32mI (335) main_task: Returned from app_main()[0m
+Current RPM: 79890
+Current RPM: 26910
+Current RPM: 15990
+Current RPM: 16080
+Current RPM: 16560
+Current RPM: 16740
+Current RPM: 20430
+Current RPM: 19920
+Current RPM: 20100
+Current RPM: 18780
+Current RPM: 20160
+Current RPM: 19170
+Current RPM: 19470
+Current RPM: 18780
+Current RPM: 21120
+Current RPM: 21210
+Current RPM: 21000
+Current RPM: 21780
+Current RPM: 22200
+Current RPM: 21480
+Current RPM: 21090
+Current RPM: 21270
+Current RPM: 21630
+Current RPM: 19830
+Current RPM: 18960
+Current RPM: 20250
+Current RPM: 21870
+Current RPM: 20760
+Current RPM: 21600
+Current RPM: 20760
+Current RPM: 21030
+Current RPM: 19980
+Current RPM: 20790
+Current RPM: 20370
+Current RPM: 20910
+Current RPM: 19860
+Current RPM: 20310
+Current RPM: 20010
+Current RPM: 20550
+Current RPM: 20700
+Current RPM: 19650
+Current RPM: 19740
+Current RPM: 19500
+Current RPM: 17970
+Current RPM: 19950
+Current RPM: 20640
+Current RPM: 18720
+Current RPM: 18990
+Current RPM: 18420
+Current RPM: 18900
+Current RPM: 20220
+Current RPM: 20970
+Current RPM: 18300
+Current RPM: 19800
+Current RPM: 18780
+Current RPM: 21840
+Current RPM: 19740
+Current RPM: 21840
+Current RPM: 21540
+Current RPM: 20010
+Current RPM: 19680
+Current RPM: 19500
+Current RPM: 18630
+Current RPM: 18480
+Current RPM: 19230
+Current RPM: 20070
+Current RPM: 21720
+Current RPM: 21180
+Current RPM: 21360
+Current RPM: 20760
+Current RPM: 25200
+Current RPM: 21540
+Current RPM: 21600
+Current RPM: 20970
+Current RPM: 22560
+Current RPM: 19350
+Current RPM: 19200
+Current RPM: 18450
+Current RPM: 19080
+Current RPM: 18570
+Current RPM: 18840
+Current RPM: 19050
+Current RPM: 18270
+Current RPM: 18330
+Current RPM: 18900
+Current RPM: 19350
+Current RPM: 18900
+Current RPM: 19140
+Current RPM: 17730
+Current RPM: 18150
+Current RPM: 18330
+Current RPM: 18390
+Current RPM: 16950
+Current RPM: 17100
+Current RPM: 17790
+Current RPM: 17130
+Current RPM: 17910
+Current RPM: 17610
+Current RPM: 17700
+Current RPM: 17940
+Current RPM: 18180
+Current RPM: 18030
+Current RPM: 17430
+Current RPM: 16800
+Current RPM: 17520
+Current RPM: 16950
+Current RPM: 18300
+Current RPM: 16950
+Current RPM: 17250
+Current RPM: 18150
+Current RPM: 17970
+Current RPM: 17190
+Current RPM: 17640
+Current RPM: 16350
+Current RPM: 17730
+Current RPM: 17670
+Current RPM: 17400
+Current RPM: 17670
+Current RPM: 17340
+Current RPM: 16590
+Current RPM: 17640
+Current RPM: 17280
+Current RPM: 16410
+Current RPM: 16740
+Current RPM: 17340
+Current RPM: 17160
+Current RPM: 17160
+Current RPM: 17700
+Current RPM: 17190
+Current RPM: 17400
+Current RPM: 16470
+Current RPM: 17130
+Current RPM: 17010
+Current RPM: 16680
+Current RPM: 16680
+Current RPM: 17340
+Current RPM: 16350
+Current RPM: 17040
+Current RPM: 16410
+Current RPM: 16890
+Current RPM: 17340
+Current RPM: 17820
+Current RPM: 16680
+Current RPM: 17580
+Current RPM: 17040
+Current RPM: 16350
+Current RPM: 17310
+Current RPM: 17250
+Current RPM: 17460
+Current RPM: 16890
+Current RPM: 16920
+Current RPM: 17610
+Current RPM: 17400
+Current RPM: 18150
+Current RPM: 18300
+Current RPM: 17160
+Current RPM: 18180
+Current RPM: 17850
+Current RPM: 17850
+Current RPM: 17370
+Current RPM: 17580
+Current RPM: 17970
+Current RPM: 17790
+Current RPM: 17220
+Current RPM: 17520
+Current RPM: 17550
+Current RPM: 17250
+Current RPM: 17610
+Current RPM: 17700
+Current RPM: 17820
+Current RPM: 17670
+Current RPM: 17640
+Current RPM: 18900
+Current RPM: 19440
+Current RPM: 22740
+Current RPM: 22380
+Current RPM: 20490
+Current RPM: 19320
+Current RPM: 19980
+Current RPM: 21000
+Current RPM: 20550
+Current RPM: 19590
+Current RPM: 19800
+Current RPM: 19530
+Current RPM: 20100
+Current RPM: 20100
+Current RPM: 19710
+Current RPM: 20250
+Current RPM: 19890
+Current RPM: 19230
+Current RPM: 18870
+Current RPM: 19740
+Current RPM: 20100
+Current RPM: 20220
+Current RPM: 19680
+Current RPM: 19530
+Current RPM: 19890
+Current RPM: 18960
+Current RPM: 19560
+Current RPM: 20610
+Current RPM: 19140
+Current RPM: 19110
+Current RPM: 19110
+Current RPM: 19140
+Current RPM: 19710
+Current RPM: 20010
+Current RPM: 19830
+Current RPM: 20070
+Current RPM: 19350
+Current RPM: 19710
+Current RPM: 19980
+Current RPM: 20460
+Current RPM: 20190
+Current RPM: 19470
+Current RPM: 20160
+Current RPM: 19230
+Current RPM: 20850
+Current RPM: 19290
+Current RPM: 18780
+Current RPM: 19140
+Current RPM: 17370
+Current RPM: 13110
+Current RPM: 13500
+Current RPM: 12870
+Current RPM: 13470
+Current RPM: 13560
+Current RPM: 13500
+Current RPM: 13500
+Current RPM: 13410
+Current RPM: 14880
+Current RPM: 18660
+Current RPM: 14220
+Current RPM: 13890
+Current RPM: 13410
+Current RPM: 12780
+Current RPM: 13290
+Current RPM: 13110
+Current RPM: 12690
+Current RPM: 12690
+Current RPM: 13170
+Current RPM: 13860
+Current RPM: 15060
+Current RPM: 15540
+Current RPM: 14790
+Current RPM: 14820
+Current RPM: 13410
+Current RPM: 14160
+Current RPM: 13110
+Current RPM: 13020
+Current RPM: 13320
+Current RPM: 13260
+Current RPM: 13140
+Current RPM: 13890
+Current RPM: 12660
+Current RPM: 12750
+Current RPM: 13140
+Current RPM: 12570
+Current RPM: 12960
+Current RPM: 12390
+Current RPM: 12420
+Current RPM: 12540
+Current RPM: 12300
+Current RPM: 12300
+Current RPM: 12660
+Current RPM: 12750
+Current RPM: 12510
+Current RPM: 13500
+Current RPM: 13980
+Current RPM: 13890
+Current RPM: 14850
+Current RPM: 14580
+Current RPM: 14730
+Current RPM: 14370
+Current RPM: 13770
+Current RPM: 13950
+Current RPM: 13620
+Current RPM: 13410
+Current RPM: 13680
+Current RPM: 13140
+Current RPM: 13410
+Current RPM: 12660
+Current RPM: 12630
+Current RPM: 12570
+Current RPM: 12900
+Current RPM: 12810
+Current RPM: 12990
+Current RPM: 12270
+Current RPM: 13080
+Current RPM: 13500
+Current RPM: 12630
+Current RPM: 12630
+Current RPM: 12810
+Current RPM: 12360
+Current RPM: 11880
+Current RPM: 12450
+Current RPM: 12750
+Current RPM: 13110
+Current RPM: 12840
+Current RPM: 12420
+Current RPM: 13170
+Current RPM: 12060
+Current RPM: 12450
+Current RPM: 12510
+Current RPM: 13350
+Current RPM: 12660
+Current RPM: 12270
+Current RPM: 12330
+Current RPM: 12780
+Current RPM: 12600
+Current RPM: 12960
+Current RPM: 12840
+Current RPM: 13260
+Current RPM: 13800
+Current RPM: 16290
+Current RPM: 19830
+Current RPM: 19530
+Current RPM: 17700
+Current RPM: 17340
+Current RPM: 18270
+Current RPM: 16950
+Current RPM: 17580
+Current RPM: 18510
+Current RPM: 19320
+Current RPM: 18960
+Current RPM: 17700
+Current RPM: 18240
+Current RPM: 18750
+Current RPM: 14010
+Current RPM: 12930
+Current RPM: 14250
+Current RPM: 18420
+Current RPM: 18450
+Current RPM: 19110
+Current RPM: 17250
+Current RPM: 18450
+Current RPM: 17970
+Current RPM: 18270
+Current RPM: 18000
+Current RPM: 17670
+Current RPM: 17310
+Current RPM: 17100
+Current RPM: 16830
+Current RPM: 17460
+Current RPM: 17280
+Current RPM: 18150
+Current RPM: 17550
+Current RPM: 16860
+Current RPM: 16920
+Current RPM: 17730
+Current RPM: 20730
+Current RPM: 18570
+Current RPM: 19110
+Current RPM: 18720
+Current RPM: 18510
+Current RPM: 18150
+Current RPM: 17400
+Current RPM: 18270
+Current RPM: 18690
+Current RPM: 17640
+Current RPM: 17760
+Current RPM: 17640
+Current RPM: 17010
+Current RPM: 17730
+Current RPM: 18330
+Current RPM: 16950
+Current RPM: 18450
+Current RPM: 18240
+Current RPM: 17790
+Current RPM: 17310
+Current RPM: 17370
+Current RPM: 17040
+Current RPM: 17670
+Current RPM: 18330
+Current RPM: 17910
+Current RPM: 18090
+Current RPM: 17640
+Current RPM: 17520
+Current RPM: 18150
+Current RPM: 17310
+Current RPM: 17340
+Current RPM: 17610
+Current RPM: 17790
+Current RPM: 17520
+Current RPM: 18060
+Current RPM: 17280
+Current RPM: 16710
+Current RPM: 17370
+Current RPM: 16440
+Current RPM: 17400
+Current RPM: 17040
+Current RPM: 16980
+Current RPM: 16650
+Current RPM: 16980
+Current RPM: 15630
+Current RPM: 16080
+Current RPM: 15630
+Current RPM: 16080
+Current RPM: 16380
+Current RPM: 14430
+Current RPM: 14610
+Current RPM: 14640
+Current RPM: 14790
+Current RPM: 14430
+Current RPM: 13920
+Current RPM: 14670
+Current RPM: 14460
+Current RPM: 14370
+Current RPM: 13440
+Current RPM: 13620
+Current RPM: 14040
+Current RPM: 14550
+Current RPM: 14490
+Current RPM: 13710
+Current RPM: 13590
+Current RPM: 14160
+Current RPM: 13920
+Current RPM: 14130
+Current RPM: 13770
+Current RPM: 14250
+Current RPM: 13980
+Current RPM: 14280
+Current RPM: 13770
+Current RPM: 14520
+Current RPM: 13770
+Current RPM: 13140
+Current RPM: 13230
+Current RPM: 13590
+Current RPM: 13470
+Current RPM: 12930
+Current RPM: 13740
+Current RPM: 13920
+Current RPM: 14100
+Current RPM: 13410
+Current RPM: 14430
+Current RPM: 13830
+Current RPM: 13650
+Current RPM: 14040
+Current RPM: 13410
+Current RPM: 14250
+Current RPM: 12930
+Current RPM: 13500
+Current RPM: 13620
+Current RPM: 12660
+Current RPM: 13140
+Current RPM: 12810
+Current RPM: 13650
+Current RPM: 13710
+Current RPM: 13500
+Current RPM: 13740
+Current RPM: 13620
+Current RPM: 13860
+Current RPM: 13560
+Current RPM: 13410
+Current RPM: 13140
+Current RPM: 12660
+Current RPM: 14130
+Current RPM: 13830
+Current RPM: 12150
+Current RPM: 13710
+Current RPM: 13290
+Current RPM: 13260
+Current RPM: 12900
+Current RPM: 13470
+Current RPM: 13440
+Current RPM: 13020
+Current RPM: 13920
+Current RPM: 12840
+Current RPM: 13350
+Current RPM: 13350
+Current RPM: 12720
+Current RPM: 13740
+Current RPM: 13080
+Current RPM: 13680
+Current RPM: 13050
+Current RPM: 13830
+Current RPM: 12690
+Current RPM: 12480
+Current RPM: 13800
+Current RPM: 12810
+Current RPM: 13200
+Current RPM: 13140
+Current RPM: 12780
+Current RPM: 13230
+Current RPM: 12510
+Current RPM: 12990
+Current RPM: 13230
+Current RPM: 13380
+Current RPM: 13170
+Current RPM: 13380
+Current RPM: 13380
+Current RPM: 12930
+Current RPM: 14010
+Current RPM: 13920
+Current RPM: 13350
+Current RPM: 13950
+Current RPM: 12840
+Current RPM: 13260
+Current RPM: 13920
+Current RPM: 12690
+Current RPM: 13950
+Current RPM: 13140
+Current RPM: 13320
+Current RPM: 13200
+Current RPM: 13080
+Current RPM: 12540
+Current RPM: 12570
+Current RPM: 13260
+Current RPM: 13470
+Current RPM: 13590
+Current RPM: 13320
+Current RPM: 12300
+Current RPM: 13710
+Current RPM: 12690
+Current RPM: 13140
+Current RPM: 13650
+Current RPM: 13650
+Current RPM: 13440
+Current RPM: 13200
+Current RPM: 14100
+Current RPM: 13200
+Current RPM: 12930
+Current RPM: 12780
+Current RPM: 13410
+Current RPM: 13320
+Current RPM: 12750
+Current RPM: 13260
+Current RPM: 13830
+Current RPM: 12990
+Current RPM: 13800
+Current RPM: 13260
+Current RPM: 13020
+Current RPM: 13170
+Current RPM: 12690
+Current RPM: 12810
+Current RPM: 13350
+Current RPM: 13140
+Current RPM: 12990
+Current RPM: 13500
+Current RPM: 12870
+Current RPM: 13500
+Current RPM: 13290
+Current RPM: 13470
+Current RPM: 13560
+Current RPM: 13380
+Current RPM: 13440
+Current RPM: 13740
+Current RPM: 13440
+Current RPM: 12930
+Current RPM: 12810
+Current RPM: 12600
+Current RPM: 13860
+Current RPM: 13170
+Current RPM: 12750
+Current RPM: 13620
+Current RPM: 13620
+Current RPM: 13350
+Current RPM: 13650
+Current RPM: 14610
+Current RPM: 14520
+Current RPM: 14400
+Current RPM: 13980
+Current RPM: 13320
+Current RPM: 13290
+Current RPM: 13230
+Current RPM: 13050
+Current RPM: 13470
+Current RPM: 13200
+Current RPM: 13680
+Current RPM: 13650
+Current RPM: 13740
+Current RPM: 15480
+Current RPM: 15660
+Current RPM: 15360
+Current RPM: 14370
+Current RPM: 13830
+Current RPM: 14460
+Current RPM: 14130
+Current RPM: 14940
+Current RPM: 14550
+Current RPM: 14310
+Current RPM: 14130
+Current RPM: 14520
+Current RPM: 14670
+Current RPM: 14370
+Current RPM: 13890
+Current RPM: 14430
+Current RPM: 14610
+Current RPM: 14070
+Current RPM: 13800
+Current RPM: 14190
+Current RPM: 14070
+Current RPM: 14550
+Current RPM: 15420
+Current RPM: 14460
+Current RPM: 14160
+Current RPM: 14730
+Current RPM: 14490
+Current RPM: 14640
+Current RPM: 14160
+Current RPM: 14250
+Current RPM: 15000
+Current RPM: 14670
+Current RPM: 14610
+Current RPM: 14490
+Current RPM: 14010
+Current RPM: 14550
+Current RPM: 13920
+Current RPM: 12930
+Current RPM: 13470
+Current RPM: 13140
+Current RPM: 14310
+Current RPM: 12600
+Current RPM: 11580
+Current RPM: 9750
+Current RPM: 8070
+Current RPM: 7860
+Current RPM: 8790
+Current RPM: 9360
+Current RPM: 11340
+Current RPM: 10500
+Current RPM: 11400
+Current RPM: 15570
+Current RPM: 38340
+Current RPM: 40110
+Current RPM: 39510
+Current RPM: 20520
+Current RPM: 14880
+Current RPM: 14430
+Current RPM: 18810
+Current RPM: 18210
+Current RPM: 19230
+Current RPM: 18090
+Current RPM: 17850
+Current RPM: 18060
+Current RPM: 18300
+Current RPM: 18600
+Current RPM: 18510
+Current RPM: 18030
+Current RPM: 17550
+Current RPM: 16770
+Current RPM: 17400
+Current RPM: 17190
+Current RPM: 17010
+Current RPM: 17070
+Current RPM: 17940
+Current RPM: 37140
+Current RPM: 80640
+Current RPM: 77010
+Current RPM: 364140
+Current RPM: 448230
+Current RPM: 450270
+Current RPM: 462780
+Current RPM: 470700
+Current RPM: 460260
+Current RPM: 473880
+Current RPM: 452880
+Current RPM: 447240
+Current RPM: 499980
+Current RPM: 486690
+Current RPM: 463020
+Current RPM: 461760
+Current RPM: 459330
+Current RPM: 494400
+Current RPM: 462660
+Current RPM: 471360
+Current RPM: 454260
+Current RPM: 463860
+Current RPM: 488340
+Current RPM: 470760
+Current RPM: 495300
+Current RPM: 481350
+Current RPM: 482520
+Current RPM: 466800
+Current RPM: 472470
+Current RPM: 452280
+Current RPM: 455100
+Current RPM: 466950
+Current RPM: 176610
+Current RPM: 334320
+Current RPM: 392400
+Current RPM: 451620
+Current RPM: 455310
+Current RPM: 441120
+Current RPM: 444720
+Current RPM: 441900
+Current RPM: 150930
+Current RPM: 41520
+Current RPM: 14460
+Current RPM: 15150
+Current RPM: 11970
+Current RPM: 12330
+Current RPM: 12060
+Current RPM: 12840
+Current RPM: 12360
+Current RPM: 12150
+Current RPM: 12630
+Current RPM: 12090
+Current RPM: 12270
+Current RPM: 12420
+Current RPM: 12630
+Current RPM: 12480
+Current RPM: 12810
+Current RPM: 12840
+Current RPM: 12330
+Current RPM: 12150
+Current RPM: 12720
+Current RPM: 12600
+Current RPM: 12360
+Current RPM: 12480
+Current RPM: 12090
+Current RPM: 12630
+Current RPM: 12420
+Current RPM: 12660
+Current RPM: 12630
+Current RPM: 12120
+Current RPM: 12600
+Current RPM: 12600
+Current RPM: 12570
+Current RPM: 12630
+Current RPM: 12840
+Current RPM: 12570
+Current RPM: 13050
+Current RPM: 12600
+Current RPM: 12690
+Current RPM: 12930
+Current RPM: 12630
+Current RPM: 12930
+Current RPM: 12450
+Current RPM: 12690
+Current RPM: 12450
+Current RPM: 13200
+Current RPM: 12630
+Current RPM: 13320
+Current RPM: 13380
+Current RPM: 12360
+Current RPM: 11610
+Current RPM: 11490
+Current RPM: 11490
+Current RPM: 11670
+Current RPM: 12300
+Current RPM: 12420
+Current RPM: 11610
+Current RPM: 11850
+Current RPM: 12420
+Current RPM: 12090
+Current RPM: 12270
+Current RPM: 11670
+Current RPM: 11700
+Current RPM: 12480
+Current RPM: 11940
+Current RPM: 11070
+Current RPM: 11820
+Current RPM: 11550
+Current RPM: 11700
+Current RPM: 11610
+Current RPM: 12060
+Current RPM: 11910
+Current RPM: 12000
+Current RPM: 12690
+Current RPM: 12690
+Current RPM: 13830
+Current RPM: 13680
+Current RPM: 14100
+Current RPM: 14580
+Current RPM: 13980
+Current RPM: 13650
+Current RPM: 13890
+Current RPM: 14130
+Current RPM: 14280
+Current RPM: 13980
+Current RPM: 13650
+Current RPM: 13500
+Current RPM: 14010
+Current RPM: 13410
+Current RPM: 13530
+Current RPM: 13440
+Current RPM: 14070
+Current RPM: 13740
+Current RPM: 14550
+Current RPM: 13440
+Current RPM: 14520
+Current RPM: 14130
+Current RPM: 13710
+Current RPM: 13770
+Current RPM: 13890
+Current RPM: 13830
+Current RPM: 14100
+Current RPM: 14190
+Current RPM: 14400
+Current RPM: 13680
+Current RPM: 14280
+Current RPM: 14160
+Current RPM: 13500
+Current RPM: 13890
+Current RPM: 13890
+Current RPM: 13080
+Current RPM: 14610
+Current RPM: 13350
+Current RPM: 13950
+Current RPM: 13770
+Current RPM: 13680
+Current RPM: 14190
+Current RPM: 14130
+Current RPM: 13740
+Current RPM: 14160
+Current RPM: 13320
+Current RPM: 13440
+Current RPM: 13980
+Current RPM: 13560
+Current RPM: 13530
+Current RPM: 13650
+Current RPM: 12930
+Current RPM: 13140
+Current RPM: 13620
+Current RPM: 13740
+Current RPM: 13200
+Current RPM: 13890
+Current RPM: 13830
+Current RPM: 13560
+Current RPM: 13950
+Current RPM: 13410
+Current RPM: 13740
+Current RPM: 13710
+Current RPM: 13470
+Current RPM: 13800
+Current RPM: 13230
+Current RPM: 14040
+Current RPM: 13530
+Current RPM: 14370
+Current RPM: 13770
+Current RPM: 14490
+Current RPM: 14640
+Current RPM: 13410
+Current RPM: 21990
+Current RPM: 14910
+Current RPM: 12930

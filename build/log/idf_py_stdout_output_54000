@@ -1,0 +1,940 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0de40h ( 56896) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001de68 vaddr=3fc93300 size=021b0h (  8624) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1ab98h (109464) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003abc0 vaddr=3fc954b0 size=00740h (  1856) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0003b308 vaddr=40374000 size=0f2a4h ( 62116) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     atp[0m
+[0;32mI (209) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (215) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  e8f5672cb...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC964D0 len 00053240 (332 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (311) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (321) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (328) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+I2C reception error: 263
+Relative Humidity : 48.87 RH
+Temperature in Fahrenheit : 72.77 F
+Relative Humidity : 48.81 RH
+Temperature in Fahrenheit : 72.77 F
+Relative Humidity : 48.72 RH
+Temperature in Fahrenheit : 72.77 F
+Relative Humidity : 48.69 RH
+Temperature in Fahrenheit : 72.75 F
+Relative Humidity : 48.64 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.59 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.58 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.53 RH
+Temperature in Fahrenheit : 72.75 F
+Relative Humidity : 48.49 RH
+Temperature in Fahrenheit : 72.75 F
+Relative Humidity : 48.46 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.33 RH
+Temperature in Fahrenheit : 72.75 F
+Relative Humidity : 48.32 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.27 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 48.23 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.67 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.69 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.67 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.67 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 48.26 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.26 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.26 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.30 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.67 F
+Relative Humidity : 48.26 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.59 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.23 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.57 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.52 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.47 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.49 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.47 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.44 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.44 F
+Relative Humidity : 48.05 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.04 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.05 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.04 RH
+Temperature in Fahrenheit : 72.44 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.06 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 72.44 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.34 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.23 RH
+Temperature in Fahrenheit : 72.37 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.31 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.27 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.27 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.27 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.24 RH
+Temperature in Fahrenheit : 72.29 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.27 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.27 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.04 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.23 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.19 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.25 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.23 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 48.21 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.22 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.14 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.11 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 72.03 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.06 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.05 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.02 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.02 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.06 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.05 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 72.01 F
+Relative Humidity : 48.07 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.08 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.04 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.09 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.06 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.11 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.10 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.12 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.19 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.17 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.18 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.13 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.15 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.16 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 48.20 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.14 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.48 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.55 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.61 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.64 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.63 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.65 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.61 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.58 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.54 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.65 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.57 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.56 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.54 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.52 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.47 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.47 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.50 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.51 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.49 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.42 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.47 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.42 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.46 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.42 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.40 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.40 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.41 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.44 RH
+Temperature in Fahrenheit : 71.96 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.43 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.39 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.93 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.37 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.33 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.32 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.40 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.34 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.33 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.34 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.33 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.38 RH
+Temperature in Fahrenheit : 71.91 F
+Relative Humidity : 48.37 RH
+Temperature in Fahrenheit : 71.88 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.35 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.36 RH
+Temperature in Fahrenheit : 71.80 F
+Relative Humidity : 48.39 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.39 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 48.45 RH
+Temperature in Fahrenheit : 71.80 F
+Relative Humidity : 48.60 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 48.92 RH
+Temperature in Fahrenheit : 71.83 F
+Relative Humidity : 49.42 RH
+Temperature in Fahrenheit : 71.86 F
+Relative Humidity : 49.94 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 50.53 RH
+Temperature in Fahrenheit : 71.98 F
+Relative Humidity : 50.96 RH
+Temperature in Fahrenheit : 72.06 F
+Relative Humidity : 51.43 RH
+Temperature in Fahrenheit : 72.09 F
+Relative Humidity : 51.92 RH
+Temperature in Fahrenheit : 72.16 F
+Relative Humidity : 52.41 RH
+Temperature in Fahrenheit : 72.21 F
+Relative Humidity : 52.88 RH
+Temperature in Fahrenheit : 72.24 F
+Relative Humidity : 53.30 RH
+Temperature in Fahrenheit : 72.27 F
+Relative Humidity : 53.56 RH
+Temperature in Fahrenheit : 72.39 F
+Relative Humidity : 53.49 RH
+Temperature in Fahrenheit : 72.41 F
+Relative Humidity : 53.43 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 53.36 RH
+Temperature in Fahrenheit : 72.54 F
+Relative Humidity : 53.35 RH
+Temperature in Fahrenheit : 72.62 F
+Relative Humidity : 53.19 RH
+Temperature in Fahrenheit : 72.65 F
+Relative Humidity : 52.98 RH
+Temperature in Fahrenheit : 72.72 F
+Relative Humidity : 52.79 RH
+Temperature in Fahrenheit : 72.75 F
+Relative Humidity : 52.47 RH
+Temperature in Fahrenheit : 72.79 F
+Relative Humidity : 52.27 RH
+Temperature in Fahrenheit : 72.85 F
+Relative Humidity : 52.05 RH
+Temperature in Fahrenheit : 72.90 F
+Relative Humidity : 51.88 RH
+Temperature in Fahrenheit : 72.92 F
+Relative Humidity : 51.86 RH
+Temperature in Fahrenheit : 73.00 F
+Relative Humidity : 51.78 RH
+Temperature in Fahrenheit : 73.00 F
+Relative Humidity : 51.72 RH
+Temperature in Fahrenheit : 73.02 F
+Relative Humidity : 51.71 RH
+Temperature in Fahrenheit : 73.05 F
+Relative Humidity : 51.75 RH
+Temperature in Fahrenheit : 73.08 F
+Relative Humidity : 51.80 RH
+Temperature in Fahrenheit : 73.15 F
+Relative Humidity : 51.95 RH
+Temperature in Fahrenheit : 73.21 F
+Relative Humidity : 52.07 RH
+Temperature in Fahrenheit : 73.23 F
+Relative Humidity : 52.24 RH
+Temperature in Fahrenheit : 73.23 F
+Relative Humidity : 52.35 RH
+Temperature in Fahrenheit : 73.26 F
+Relative Humidity : 52.35 RH
+Temperature in Fahrenheit : 73.26 F
+Relative Humidity : 52.18 RH
+Temperature in Fahrenheit : 73.28 F
+Relative Humidity : 51.99 RH
+Temperature in Fahrenheit : 73.36 F
+Relative Humidity : 51.81 RH
+Temperature in Fahrenheit : 73.41 F
+Relative Humidity : 51.64 RH
+Temperature in Fahrenheit : 73.36 F
+Relative Humidity : 51.46 RH
+Temperature in Fahrenheit : 73.38 F
+Relative Humidity : 51.32 RH
+Temperature in Fahrenheit : 73.43 F
+Relative Humidity : 51.27 RH
+Temperature in Fahrenheit : 73.46 F
+Relative Humidity : 51.10 RH
+Temperature in Fahrenheit : 73.46 F
+Relative Humidity : 51.07 RH
+Temperature in Fahrenheit : 73.46 F
+Relative Humidity : 50.94 RH
+Temperature in Fahrenheit : 73.51 F
+Relative Humidity : 50.84 RH
+Temperature in Fahrenheit : 73.51 F
+Relative Humidity : 50.75 RH
+Temperature in Fahrenheit : 73.48 F
+Relative Humidity : 50.52 RH
+Temperature in Fahrenheit : 73.51 F

@@ -1,0 +1,157 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e37ch ( 58236) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e3a4 vaddr=3fc92400 size=01c74h (  7284) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f70ch (128780) map[0m
+[0;32mI (157) esp_image: segment 3: paddr=0003f734 vaddr=3fc94074 size=00c6ch (  3180) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=000403a8 vaddr=40374000 size=0e394h ( 58260) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) cpu_start: Application information:[0m
+[0;32mI (208) cpu_start: Project name:     atp[0m
+[0;32mI (213) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (218) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (224) cpu_start: ELF file SHA256:  da420d15f...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (235) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (239) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (244) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FC95600 len 00054110 (336 KiB): RAM[0m
+[0;32mI (262) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (268) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (281) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (292) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (296) spi_flash: flash io: opi_str[0m
+[0;33mW (301) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (321) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (328) main_task: Started on CPU0[0m
+[0;32mI (338) main_task: Calling app_main()[0m
+[0;32mI (338) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (348) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Relative Humidity : 49.61 RH 
+Temperature in Fahrenheit : 76.87 F 
+[0;32mI (1698) gpio: GPIO[5]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1698) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Relative Humidity : 49.68 RH 
+Temperature in Fahrenheit : 76.89 F 
+[0;31mE (3028) i2c.common: I2C bus id(1) has already been acquired[0m
+[0;31mE (3028) i2c.common: acquire bus failed[0m
+[0;31mE (3028) i2c.master: i2c_new_master_bus(792): I2C bus acquire failed[0m
+[0;31mE (3028) i2c.common: i2c_release_bus_handle(154): Bus not freed entirely[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x42008529
+file: "/IDF/examples/get-started/myproject/main/lcd.c" line 23
+func: lcd_init
+expression: i2c_new_master_bus(&i2c_mst_config_lcd, &bus_handle_lcd)
+
+abort() was called at PC 0x40379ee7 on core 0
+
+
+Backtrace: 0x403758ea:0x3fc99170 0x40379ef1:0x3fc99190 0x40380355:0x3fc991b0 0x40379ee7:0x3fc99220 0x42008529:0x3fc99250 0x4200868b:0x3fc99290 0x420084db:0x3fc992b0 0x4201ee5b:0x3fc992d0 0x4037a9e1:0x3fc99300
+
+
+
+
+ELF file SHA256: da420d15f
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375860
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e37ch ( 58236) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e3a4 vaddr=3fc92400 size=01c74h (  7284) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1f70ch (128780) map[0m
+[0;32mI (161) esp_image: segment 3: paddr=0003f734 vaddr=3fc94074 size=00c6ch (  3180) load[0m
+[0;32mI (162) esp_image: segment 4: paddr=000403a8 vaddr=40374000 size=0e394h ( 58260) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     atp[0m
+[0;32mI (217) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (223) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  da420d15f...[0m
+[0;32mI (234) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (239) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (244) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (249) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (254) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FC95600 len 00054110 (336 KiB): RAM[0m
+[0;32mI (267) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (273) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (286) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (296) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (301) spi_flash: flash io: opi_str[0m
+[0;33mW (305) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (319) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (325) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (353) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Relative Humidity : 49.84 RH 
+Temperature in Fahrenheit : 76.89 F 
+[0;32mI (1703) gpio: GPIO[5]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1703) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Relative Humidity : 50.00 RH 
+Temperature in Fahrenheit : 76.89 F 

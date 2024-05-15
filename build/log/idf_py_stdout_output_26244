@@ -1,0 +1,1771 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (216) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (279) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (289) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (294) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (311) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (322) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (329) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;31mE (2346) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2346) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2346) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2356) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2356) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2366) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2376) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     atp[0m
+[0;32mI (210) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (216) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (279) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (289) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (294) spi_flash: flash io: opi_str[0m
+[0;33mW (298) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (311) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (322) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (329) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;31mE (2346) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2346) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2346) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2356) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2356) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2366) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2376) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;31mE (2351) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2351) rmt(legacy): rmt_config(692): set gpio for RMT driver failed[0m
+[0;31mE (2351) owb_rmt: failed to configure rx, uninstalling rmt driver on tx channel[0m
+[0;31mE (2361) rmt(legacy): rmt_set_gpio(546): RMT CHANNEL ERR[0m
+[0;31mE (2361) owb_rmt: _init() failed with status 6[0m
+Single device optimisations enabled
+[0;31mE (2371) rmt(legacy): rmt_get_rx_idle_thresh(200): RMT CHANNEL ERR[0m
+[0;31mE (2381) rmt(legacy): rmt_set_rx_idle_thresh(191): RMT CHANNEL ERR[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b865  PS      : 0x00060f33  A0      : 0x8037a5f1  A1      : 0x3fc99dd0  
+A2      : 0x00000074  A3      : 0xffffffff  A4      : 0x3fc99e50  A5      : 0x00060f23  
+A6      : 0x3c025580  A7      : 0x0000cdcd  A8      : 0x00060f20  A9      : 0x3fc99ac0  
+A10     : 0x0000004e  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x3c0265ab  
+A14     : 0x00000017  A15     : 0x00000004  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000074  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x4037b862:0x3fc99dd0 0x4037a5ee:0x3fc99e00 0x4037a9a6:0x3fc99e50 0x42008dcd:0x3fc99e90 0x42008f3f:0x3fc99ec0 0x4200913a:0x3fc99ef0 0x42008555:0x3fc99f10 0x420085be:0x3fc99f40 0x420088b8:0x3fc99f70 0x42008906:0x3fc99fa0 0x42008404:0x3fc99fc0 0x4201b1ab:0x3fc9a010 0x4037b675:0x3fc9a040
+
+
+
+
+ELF file SHA256: 07fe185d1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375914
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d98
+entry 0x403c9914
+[0;32mI (37) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (38) boot: compile time Mar 17 2024 11:51:15[0m
+[0;32mI (38) boot: Multicore bootloader[0m
+[0;32mI (41) boot: chip revision: v0.1[0m
+[0;32mI (45) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (50) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (55) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (60) boot: Enabling RNG early entropy source...[0m
+[0;32mI (65) boot: Partition Table:[0m
+[0;32mI (69) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (76) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (83) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e2e0h ( 58080) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e308 vaddr=3fc93100 size=01d10h (  7440) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1baech (113388) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=0003bb14 vaddr=3fc94e10 size=00c3ch (  3132) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=0003c758 vaddr=40374000 size=0f028h ( 61480) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     atp[0m
+[0;32mI (215) cpu_start: App version:      v5.2-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Mar 17 2024 11:50:57[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  07fe185d1...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96340 len 000533D0 (332 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (294) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (303) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (316) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (327) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
